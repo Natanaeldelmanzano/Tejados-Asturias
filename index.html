@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Expertos en reparación e instalación de tejados en Oviedo, Gijón, Avilés y toda Asturias. Servicio de urgencias 24/7. Más de 25 años de experiencia. Presupuesto gratuito ☎️ 693 743 627">
+    <meta name="keywords" content="tejados oviedo, tejados asturias, reparación tejados gijón, empresa tejados avilés, goteras asturias, canalones oviedo">
+    <title>Tejados Oviedo y Asturias | Reparación e Instalación 24h | ☎️ 693 743 627</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org markup for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Tejados Oviedo y Asturias",
+      "image": "",
+      "telephone": "+34693743627",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 43.3614,
+          "longitude": -5.8493
+        },
+        "geoRadius": "50000"
+      },
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "127"
+      }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --terracotta-primary: #C84B31;
+            --terracotta-dark: #8B3323;
+            --terracotta-light: #E74C3C;
+            --clay-brown: #7D4F38;
+            --charcoal: #2C3E50;
+            --slate: #34495E;
+            --warm-white: #FFF8F0;
+            --light-gray: #ECF0F1;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.15);
+            --shadow-lg: 0 8px 32px rgba(0,0,0,0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: var(--charcoal);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 1.5px;
+            line-height: 1.2;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-sm);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--terracotta-primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--charcoal);
+            font-size: 1rem;
+            display: block;
+            margin-top: -5px;
+        }
+        
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .header-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--terracotta-primary);
+            text-decoration: none;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-dark));
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, var(--terracotta-dark), var(--terracotta-primary));
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(200, 75, 49, 0.9), rgba(139, 51, 35, 0.85)),
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232C3E50" width="1200" height="600"/><path fill="%23C84B31" opacity="0.3" d="M0 300L50 283.3C100 266.7 200 233.3 300 216.7C400 200 500 200 600 216.7C700 233.3 800 266.7 900 283.3C1000 300 1100 300 1150 300L1200 300L1200 601L1150 601C1100 601 1000 601 900 601C800 601 700 601 600 601C500 601 400 601 300 601C200 601 100 601 50 601L0 601Z"/></svg>');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="1" fill="white" opacity="0.3"/></svg>');
+            opacity: 0.1;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            from { background-position: 0 0; }
+            to { background-position: 100px 100px; }
+        }
+        
+        .hero-content {
+            position: relative;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6.5rem);
+            color: white;
+            margin-bottom: 1rem;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            animation: slideInUp 0.8s ease-out;
+        }
+        
+        .hero h1 span {
+            color: var(--warm-white);
+            display: block;
+            font-size: clamp(1.5rem, 4vw, 3rem);
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            color: var(--warm-white);
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            animation: slideInUp 0.8s ease-out 0.2s both;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            animation: slideInUp 0.8s ease-out 0.4s both;
+        }
+        
+        .cta-primary {
+            background: white;
+            color: var(--terracotta-primary);
+            padding: 1.25rem 3rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        
+        .cta-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 1.25rem 3rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: white;
+            transform: translateY(-2px);
+        }
+        
+        .trust-badges {
+            display: flex;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+            animation: slideInUp 0.8s ease-out 0.6s both;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: white;
+            font-size: 1.1rem;
+        }
+        
+        .badge-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 6rem 2rem;
+            background: var(--warm-white);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .section-title h2 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            color: var(--terracotta-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--slate);
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .services-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--terracotta-primary);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-light));
+            color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.8rem;
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: var(--slate);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--slate);
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            color: var(--terracotta-primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        /* Urgency Section */
+        .urgency {
+            background: linear-gradient(135deg, var(--terracotta-dark), var(--terracotta-primary));
+            padding: 5rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .urgency::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .urgency-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .urgency h2 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .urgency-subtitle {
+            font-size: 1.5rem;
+            color: var(--warm-white);
+            margin-bottom: 3rem;
+        }
+        
+        .urgency-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .urgency-feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .urgency-feature h3 {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .urgency-feature p {
+            color: var(--warm-white);
+            font-size: 1.1rem;
+        }
+        
+        .pulse-button {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .pulse-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 50px;
+            transform: translate(-50%, -50%);
+            animation: pulse 2s infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.15);
+                opacity: 0;
+            }
+        }
+        
+        /* Coverage Section */
+        .coverage {
+            padding: 6rem 2rem;
+            background: white;
+        }
+        
+        .coverage-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .municipalities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+        }
+        
+        .municipality {
+            background: var(--light-gray);
+            padding: 1.25rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            color: var(--charcoal);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .municipality:hover {
+            background: var(--terracotta-primary);
+            color: white;
+            border-color: var(--terracotta-dark);
+            transform: translateY(-3px);
+        }
+        
+        .municipality.featured {
+            background: var(--terracotta-light);
+            color: white;
+            font-weight: 600;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: 6rem 2rem;
+            background: var(--warm-white);
+        }
+        
+        .testimonials-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 5rem;
+            color: var(--terracotta-primary);
+            opacity: 0.2;
+            font-family: Georgia, serif;
+        }
+        
+        .stars {
+            color: #F39C12;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--slate);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            color: var(--charcoal);
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-info p {
+            font-size: 0.95rem;
+            color: var(--slate);
+        }
+        
+        /* Why Us Section */
+        .why-us {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--charcoal), var(--slate));
+            color: white;
+        }
+        
+        .why-us-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        
+        .why-item {
+            text-align: center;
+        }
+        
+        .why-number {
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--terracotta-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .why-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .why-item p {
+            color: var(--light-gray);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Final CTA Section */
+        .final-cta {
+            padding: 6rem 2rem;
+            background: white;
+            text-align: center;
+        }
+        
+        .final-cta-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .final-cta h2 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: var(--terracotta-primary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .final-cta p {
+            font-size: 1.3rem;
+            color: var(--slate);
+            margin-bottom: 3rem;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--charcoal);
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--terracotta-light);
+        }
+        
+        .footer-section p, .footer-section li {
+            color: var(--light-gray);
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: var(--light-gray);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--terracotta-light);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--light-gray);
+        }
+        
+        /* Floating Call Button */
+        .floating-call {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            animation: floatBounce 3s ease-in-out infinite;
+        }
+        
+        @keyframes floatBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .floating-call-btn {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s ease;
+        }
+        
+        .floating-call-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7);
+        }
+        
+        .floating-call-btn::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #25D366;
+            border-radius: 50%;
+            animation: ripple 1.5s infinite;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-phone {
+                display: none;
+            }
+            
+            .hero {
+                background-attachment: scroll;
+            }
+            
+            .hero-content {
+                padding: 6rem 1.5rem 3rem;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+            }
+            
+            .cta-primary, .cta-secondary {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            .services-grid, .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .municipalities {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            .floating-call {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .floating-call-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 1.7rem;
+            }
+        }
+        
+        /* Scroll Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                TEJADOS OVIEDO Y ASTURIAS
+                <span>Expertos desde 1998</span>
+            </a>
+            <div class="header-actions">
+                <a href="tel:+34693743627" class="header-phone">
+                    📞 693 743 627
+                </a>
+                <a href="tel:+34693743627" class="cta-button">Llamar Ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                PROTEGE TU HOGAR
+                <span>Expertos en Tejados por Toda Asturias</span>
+            </h1>
+            <p class="hero-subtitle">
+                Más de 25 años resolviendo goteras, reparando tejados y protegiendo hogares en Oviedo, Gijón, Avilés y toda la región. Servicio de urgencias 24/7.
+            </p>
+            <div class="hero-ctas">
+                <a href="tel:+34693743627" class="cta-primary">
+                    📞 Llamar 693 743 627
+                </a>
+                <a href="#servicios" class="cta-secondary">
+                    Ver Servicios
+                </a>
+            </div>
+            <div class="trust-badges">
+                <div class="badge">
+                    <div class="badge-icon">✓</div>
+                    <div>
+                        <strong>Respuesta</strong><br>
+                        en 24h
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">⭐</div>
+                    <div>
+                        <strong>4.9/5</strong><br>
+                        127 Reseñas
+                    </div>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">🛠</div>
+                    <div>
+                        <strong>+25 Años</strong><br>
+                        Experiencia
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="section-title fade-in">
+            <h2>NUESTROS SERVICIOS</h2>
+            <p class="section-subtitle">
+                Soluciones completas para todo tipo de tejados y cubiertas en Asturias
+            </p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">🏠</div>
+                <h3>REPARACIÓN DE TEJADOS</h3>
+                <p>Especialistas en reparación de goteras, tejas rotas, filtraciones y daños por temporal.</p>
+                <ul class="service-features">
+                    <li>Detección de filtraciones</li>
+                    <li>Sustitución de tejas</li>
+                    <li>Reparación de canalones</li>
+                    <li>Impermeabilización</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">🔨</div>
+                <h3>INSTALACIÓN COMPLETA</h3>
+                <p>Instalamos tejados nuevos de pizarra, teja árabe, teja mixta y panel sándwich.</p>
+                <ul class="service-features">
+                    <li>Tejados de pizarra</li>
+                    <li>Teja árabe y mixta</li>
+                    <li>Cubiertas metálicas</li>
+                    <li>Aislamientos térmicos</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">💧</div>
+                <h3>CANALONES Y BAJANTES</h3>
+                <p>Instalación, reparación y limpieza de sistemas de evacuación de agua.</p>
+                <ul class="service-features">
+                    <li>Instalación de canalones</li>
+                    <li>Limpieza y desatascos</li>
+                    <li>Reparación de bajantes</li>
+                    <li>Sistemas de recogida</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">🔍</div>
+                <h3>INSPECCIÓN Y MANTENIMIENTO</h3>
+                <p>Revisiones preventivas para evitar problemas mayores y alargar la vida útil de tu tejado.</p>
+                <ul class="service-features">
+                    <li>Inspección con dron</li>
+                    <li>Informes detallados</li>
+                    <li>Planes de mantenimiento</li>
+                    <li>Garantía de trabajos</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">🌧</div>
+                <h3>IMPERMEABILIZACIÓN</h3>
+                <p>Protección total contra humedades con los mejores sistemas del mercado.</p>
+                <ul class="service-features">
+                    <li>Membranas impermeables</li>
+                    <li>Revestimientos especiales</li>
+                    <li>Terrazas y cubiertas planas</li>
+                    <li>Tratamientos anti-musgo</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+            </div>
+            
+            <div class="service-card fade-in">
+                <div class="service-icon">⚡</div>
+                <h3>URGENCIAS 24/7</h3>
+                <p>Servicio de emergencias disponible todos los días del año para goteras y daños graves.</p>
+                <ul class="service-features">
+                    <li>Respuesta inmediata</li>
+                    <li>Disponibilidad 24 horas</li>
+                    <li>Fines de semana y festivos</li>
+                    <li>Reparaciones temporales</li>
+                </ul>
+                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Llamada de Urgencia</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency">
+        <div class="urgency-content">
+            <h2>¿GOTERAS? ¿FILTRACIONES?</h2>
+            <p class="urgency-subtitle">Atendemos emergencias en menos de 2 horas</p>
+            <div class="urgency-features">
+                <div class="urgency-feature fade-in">
+                    <h3>⏱ 2 HORAS</h3>
+                    <p>Tiempo medio de respuesta en urgencias</p>
+                </div>
+                <div class="urgency-feature fade-in">
+                    <h3>24/7</h3>
+                    <p>Disponibles todos los días del año</p>
+                </div>
+                <div class="urgency-feature fade-in">
+                    <h3>100%</h3>
+                    <p>Satisfacción garantizada</p>
+                </div>
+            </div>
+            <div class="pulse-button">
+                <a href="tel:+34693743627" class="cta-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+                    🚨 LLAMAR URGENCIAS: 693 743 627
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="coverage" id="cobertura">
+        <div class="coverage-content">
+            <div class="section-title fade-in">
+                <h2>SERVICIO EN TODA ASTURIAS</h2>
+                <p class="section-subtitle">
+                    Trabajamos en todos los municipios de la región con el mismo compromiso de calidad
+                </p>
+            </div>
+            <div class="municipalities">
+                <div class="municipality featured">Oviedo</div>
+                <div class="municipality featured">Gijón</div>
+                <div class="municipality featured">Avilés</div>
+                <div class="municipality">Siero</div>
+                <div class="municipality">Langreo</div>
+                <div class="municipality">Mieres</div>
+                <div class="municipality">Castrillón</div>
+                <div class="municipality">Llanera</div>
+                <div class="municipality">Corvera</div>
+                <div class="municipality">Carreño</div>
+                <div class="municipality">Gozón</div>
+                <div class="municipality">Noreña</div>
+                <div class="municipality">Las Regueras</div>
+                <div class="municipality">Aller</div>
+                <div class="municipality">Laviana</div>
+                <div class="municipality">San Martín del Rey Aurelio</div>
+                <div class="municipality">Lena</div>
+                <div class="municipality">Nava</div>
+                <div class="municipality">Bimenes</div>
+                <div class="municipality">Piloña</div>
+                <div class="municipality">Villaviciosa</div>
+                <div class="municipality">Colunga</div>
+                <div class="municipality">Ribadesella</div>
+                <div class="municipality">Cangas de Onís</div>
+                <div class="municipality">Llanes</div>
+                <div class="municipality">Parres</div>
+                <div class="municipality">Cabrales</div>
+                <div class="municipality">Valdés</div>
+                <div class="municipality">Navia</div>
+                <div class="municipality">Tineo</div>
+                <div class="municipality">Salas</div>
+                <div class="municipality">Pravia</div>
+                <div class="municipality">Cudillero</div>
+                <div class="municipality">Muros de Nalón</div>
+                <div class="municipality">Soto del Barco</div>
+                <div class="municipality">+ Todos los concejos</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="opiniones">
+        <div class="testimonials-content">
+            <div class="section-title fade-in">
+                <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+                <p class="section-subtitle">
+                    Más de 127 familias asturianas confían en nuestro trabajo
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Tenía goteras graves en el salón y vinieron en menos de 2 horas un domingo. Profesionales, rápidos y el precio muy ajustado. Totalmente recomendables."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MG</div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Oviedo - Hace 3 meses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Nos cambiaron todo el tejado de la casa en Gijón. Trabajo impecable, dejaron todo limpio y terminaron antes del plazo. Y el presupuesto sin sorpresas. Muy contentos."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JL</div>
+                        <div class="author-info">
+                            <h4>José Luis Fernández</h4>
+                            <p>Gijón - Hace 1 mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Excelente servicio. Repararon las goteras del bajo cubierta y además me aconsejaron sobre el mantenimiento. Gente seria y trabajadora. Los recomiendo 100%."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Ana María Suárez</h4>
+                            <p>Avilés - Hace 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Llamé por una urgencia de gotera en plena tormenta y vinieron enseguida. Solucionaron el problema temporal esa noche y volvieron a hacer la reparación definitiva. Súper agradecido."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RA</div>
+                        <div class="author-info">
+                            <h4>Roberto Álvarez</h4>
+                            <p>Mieres - Hace 6 meses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Reformaron el tejado de nuestra casa de pueblo en Siero. Trabajo perfecto, usaron materiales de primera calidad y respetaron el estilo tradicional. Muy profesionales."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CF</div>
+                        <div class="author-info">
+                            <h4>Carmen Fdez</h4>
+                            <p>Siero - Hace 4 meses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial fade-in">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Nos instalaron canalones nuevos y limpiaron todo el sistema de evacuación. Muy atentos, explicaron todo el proceso y el resultado es excelente. Empresa de confianza."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Luis Menéndez</h4>
+                            <p>Langreo - Hace 2 meses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+        <div class="why-us-content">
+            <div class="section-title fade-in">
+                <h2 style="color: white;">¿POR QUÉ ELEGIRNOS?</h2>
+                <p class="section-subtitle" style="color: var(--light-gray);">
+                    Compromiso, experiencia y resultados que hablan por sí mismos
+                </p>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-item fade-in">
+                    <div class="why-number">25+</div>
+                    <h3>AÑOS DE EXPERIENCIA</h3>
+                    <p>Más de dos décadas protegiendo hogares asturianos contra las inclemencias del tiempo.</p>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">127</div>
+                    <h3>CLIENTES SATISFECHOS</h3>
+                    <p>Familias que confían en nosotros y nos recomiendan a sus vecinos y conocidos.</p>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">24/7</div>
+                    <h3>SERVICIO DE URGENCIAS</h3>
+                    <p>Disponibles cualquier día del año, incluso festivos y fines de semana.</p>
+                </div>
+                <div class="why-item fade-in">
+                    <div class="why-number">100%</div>
+                    <h3>GARANTÍA DE TRABAJOS</h3>
+                    <p>Todos nuestros servicios incluyen garantía escrita de mano de obra y materiales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="final-cta-content fade-in">
+            <h2>¿LISTO PARA PROTEGER TU HOGAR?</h2>
+            <p>Llama ahora y recibe un presupuesto gratuito sin compromiso. Atendemos tu llamada de inmediato.</p>
+            <a href="tel:+34693743627" class="cta-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+                📞 693 743 627 - LLAMAR AHORA
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TEJADOS OVIEDO Y ASTURIAS</h3>
+                <p>Especialistas en reparación e instalación de tejados con más de 25 años de experiencia en toda Asturias.</p>
+                <p><strong>Horario de Atención:</strong><br>
+                Lunes a Domingo: 24 horas<br>
+                Servicio de urgencias disponible</p>
+            </div>
+            <div class="footer-section">
+                <h3>SERVICIOS</h3>
+                <ul>
+                    <li>Reparación de tejados</li>
+                    <li>Instalación completa</li>
+                    <li>Canalones y bajantes</li>
+                    <li>Impermeabilización</li>
+                    <li>Inspección y mantenimiento</li>
+                    <li>Urgencias 24/7</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>ZONAS DE SERVICIO</h3>
+                <ul>
+                    <li>Oviedo y concejos limítrofes</li>
+                    <li>Gijón y área metropolitana</li>
+                    <li>Avilés y comarca</li>
+                    <li>Cuencas mineras</li>
+                    <li>Occidente asturiano</li>
+                    <li>Oriente de Asturias</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <p><strong>Teléfono:</strong><br>
+                📞 <a href="tel:+34693743627">693 743 627</a></p>
+                <p><strong>WhatsApp:</strong><br>
+                💬 <a href="https://wa.me/34693743627">693 743 627</a></p>
+                <p style="margin-top: 1.5rem;">
+                    <strong>Presupuestos gratuitos</strong><br>
+                    Sin compromiso<br>
+                    Respuesta en 24h
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tejados Oviedo y Asturias. Todos los derechos reservados. | Servicio profesional en toda Asturias</p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <div class="floating-call">
+        <a href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" class="floating-call-btn" title="Contactar por WhatsApp">
+            💬
+        </a>
+    </div>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
