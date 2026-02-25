@@ -3,181 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Expertos en reparación e instalación de tejados en Oviedo, Gijón, Avilés y toda Asturias. Servicio de urgencias 24/7. Más de 25 años de experiencia. Presupuesto gratuito ☎️ 693 743 627">
-    <meta name="keywords" content="tejados oviedo, tejados asturias, reparación tejados gijón, empresa tejados avilés, goteras asturias, canalones oviedo">
-    <title>Tejados Oviedo y Asturias | Reparación e Instalación 24h | ☎️ 693 743 627</title>
     
-    <!-- Fonts -->
+    <!-- META TAGS SEO - Personaliza estos valores según cada página -->
+    <title>Cubiertas David | Expertos en Tejados y Cubiertas en Asturias | ☎️ 693 743 627</title>
+    <meta name="description" content="Empresa líder en reparación e instalación de tejados en Oviedo, Gijón, Avilés y toda Asturias. Más de 25 años de experiencia. Presupuesto gratuito. Respuesta en menos de 2 horas. ☎️ 693 743 627 | WhatsApp disponible">
+    <meta name="keywords" content="cubiertas david, tejados oviedo, tejados asturias, reparación tejados gijón, empresa tejados avilés, goteras asturias, canalones oviedo, impermeabilización cubiertas, reforma tejados, panel sándwich asturias">
+    
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Cubiertas David - Tu Tejadista de Confianza en Asturias">
+    <meta property="og:description" content="Más de 25 años protegiendo hogares asturianos. Llamar al 693 743 627">
+    <meta property="og:image" content="./images/logo-cd-social.jpg">
+    <meta property="og:url" content="https://www.cubiertasdavid.com">
+    
+    <!-- Fonts - Cambia estos si quieres usar otras fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org markup for Local Business -->
+    <!-- Schema.org Markup para SEO Local - Google lo usa para mostrar tu negocio correctamente -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "RoofingContractor",
-      "name": "Tejados Oviedo y Asturias",
-      "image": "",
+      "name": "Cubiertas David",
+      "image": "./images/logo-cd.jpg",
       "telephone": "+34693743627",
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 43.3614,
-          "longitude": -5.8493
-        },
-        "geoRadius": "50000"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oviedo",
+        "addressRegion": "Asturias",
+        "addressCountry": "ES"
       },
+      "areaServed": [
+        {"@type": "City", "name": "Oviedo"},
+        {"@type": "City", "name": "Gijón"},
+        {"@type": "City", "name": "Avilés"},
+        {"@type": "State", "name": "Asturias"}
+      ],
       "priceRange": "€€",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "20:00"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "127"
-      }
+      "sameAs": [
+        "https://www.facebook.com/cubiertasdavid",
+        "https://www.instagram.com/cubiertasdavid"
+      ]
     }
     </script>
     
     <style>
+        /* ============================================
+           VARIABLES CSS - Personaliza los colores y valores aquí
+           ============================================ */
         :root {
-            --terracotta-primary: #C84B31;
-            --terracotta-dark: #8B3323;
-            --terracotta-light: #E74C3C;
-            --clay-brown: #7D4F38;
-            --charcoal: #2C3E50;
-            --slate: #34495E;
-            --warm-white: #FFF8F0;
-            --light-gray: #ECF0F1;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
-            --shadow-md: 0 4px 16px rgba(0,0,0,0.15);
-            --shadow-lg: 0 8px 32px rgba(0,0,0,0.2);
+            /* Paleta de colores corporativa - Basada en el logo CD */
+            --azul-principal: #1B4B8A;      /* Azul corporativo principal */
+            --azul-oscuro: #0D2B52;         /* Para headers y footer */
+            --azul-claro: #E8F0FE;          /* Fondos suaves */
+            --naranja-acento: #E67E22;      /* CTAs y elementos de urgencia */
+            --blanco: #FFFFFF;
+            --gris-oscuro: #2C3E50;         /* Texto principal */
+            --gris-claro: #ECF0F1;          /* Fondos alternos */
+            --gris-medio: #7F8C8D;          /* Texto secundario */
+            
+            /* Sombras - Para dar profundidad a los elementos */
+            --sombra-suave: 0 2px 8px rgba(0,0,0,0.1);
+            --sombra-media: 0 4px 16px rgba(0,0,0,0.15);
+            --sombra-fuerte: 0 8px 32px rgba(0,0,0,0.2);
+            
+            /* Espaciados estándar */
+            --espacio-xs: 0.5rem;   /* 8px */
+            --espacio-sm: 1rem;     /* 16px */
+            --espacio-md: 2rem;     /* 32px */
+            --espacio-lg: 4rem;     /* 64px */
+            --espacio-xl: 6rem;     /* 96px */
+            
+            /* Tipografía */
+            --fuente-principal: 'Open Sans', sans-serif;
+            --fuente-titulos: 'Montserrat', sans-serif;
         }
         
+        /* ============================================
+           RESET Y ESTILOS GLOBALES
+           ============================================ */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
+        html {
+            scroll-behavior: smooth; /* Scroll suave al hacer clic en anclas */
+        }
+        
         body {
-            font-family: 'Work Sans', sans-serif;
-            color: var(--charcoal);
+            font-family: var(--fuente-principal);
+            color: var(--gris-oscuro);
             line-height: 1.6;
             overflow-x: hidden;
         }
         
-        h1, h2, h3, h4, h5 {
-            font-family: 'Bebas Neue', cursive;
-            letter-spacing: 1.5px;
+        /* Títulos - Cambia font-family si quieres otra fuente */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
             line-height: 1.2;
+            margin-bottom: var(--espacio-sm);
         }
         
-        /* Header */
-        header {
+        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h3 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+        h4 { font-size: clamp(1.25rem, 3vw, 2rem); }
+        
+        p {
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Utilidades generales */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--espacio-md);
+        }
+        
+        /* ============================================
+           HEADER Y NAVEGACIÓN PRINCIPAL
+           Barra superior fija con logo, menú y botones de contacto
+           ============================================ */
+        .header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.98);
             backdrop-filter: blur(10px);
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--sombra-suave);
             z-index: 1000;
             transition: all 0.3s ease;
         }
         
-        header.scrolled {
-            background: rgba(255, 255, 255, 1);
-            box-shadow: var(--shadow-md);
+        /* Cuando haces scroll, el header se hace más pequeño */
+        .header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: var(--sombra-media);
         }
         
         .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1rem 0;
         }
         
+        /* Logo - Ajusta el tamaño aquí */
         .logo {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--terracotta-primary);
-            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
         }
         
-        .logo span {
-            color: var(--charcoal);
-            font-size: 1rem;
+        .logo img {
+            height: 60px; /* Cambia la altura del logo aquí */
+            width: auto;
+            transition: height 0.3s ease;
+        }
+        
+        .header.scrolled .logo img {
+            height: 45px; /* Logo más pequeño al hacer scroll */
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            color: var(--azul-principal);
+            margin: 0;
+        }
+        
+        .logo-text span {
+            font-size: 0.875rem;
+            color: var(--gris-medio);
+            font-weight: 400;
+        }
+        
+        /* Navegación principal */
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-weight: 600;
+            color: var(--gris-oscuro);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        /* Efecto hover en los enlaces */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--azul-principal);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Menús desplegables */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+        
+        /* Contenido del desplegable */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: var(--sombra-fuerte);
+            border-radius: 8px;
+            padding: 1rem 0;
+            min-width: 250px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu a {
             display: block;
-            margin-top: -5px;
+            padding: 0.75rem 1.5rem;
+            color: var(--gris-oscuro);
+            font-weight: 500;
         }
         
+        .dropdown-menu a:hover {
+            background: var(--azul-claro);
+            color: var(--azul-principal);
+        }
+        
+        /* Desplegable con dos columnas para municipios */
+        .dropdown-menu.two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-width: 400px;
+        }
+        
+        /* Botones de contacto en el header */
         .header-actions {
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1rem;
         }
         
-        .header-phone {
+        .btn-phone {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: var(--terracotta-primary);
-            text-decoration: none;
+            font-weight: 700;
+            color: var(--azul-principal);
+            font-size: 1.125rem;
         }
         
-        .cta-button {
-            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-dark));
+        .btn-primary {
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
             color: white;
             padding: 0.875rem 2rem;
             border-radius: 50px;
-            text-decoration: none;
             font-weight: 600;
-            font-size: 1rem;
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--sombra-media);
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
-            display: inline-block;
         }
         
-        .cta-button:hover {
+        .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-            background: linear-gradient(135deg, var(--terracotta-dark), var(--terracotta-primary));
+            box-shadow: var(--sombra-fuerte);
         }
         
-        /* Hero Section */
-        .hero {
-            position: relative;
-            min-height: 100vh;
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--sombra-media);
+            transition: all 0.3s ease;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, rgba(200, 75, 49, 0.9), rgba(139, 51, 35, 0.85)),
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232C3E50" width="1200" height="600"/><path fill="%23C84B31" opacity="0.3" d="M0 300L50 283.3C100 266.7 200 233.3 300 216.7C400 200 500 200 600 216.7C700 233.3 800 266.7 900 283.3C1000 300 1100 300 1150 300L1200 300L1200 601L1150 601C1100 601 1000 601 900 601C800 601 700 601 600 601C500 601 400 601 300 601C200 601 100 601 50 601L0 601Z"/></svg>');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            overflow: hidden;
+            gap: 0.5rem;
         }
         
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        /* Menú móvil hamburguesa */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--azul-principal);
+            transition: all 0.3s ease;
+        }
+        
+        /* ============================================
+           SECCIÓN HERO CON PARALLAX
+           Sección principal con imagen de fondo y efecto parallax
+           ============================================ */
+        .hero {
+            /* Imagen de fondo - Reemplaza 'img1.jpg' con tu imagen real */
+            /* Tamaño recomendado: 1920x1080px o superior */
+            background-image: url('https://images.unsplash.com/photo-1632778149955-e80f8ceca2e7?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Efecto parallax */
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 80px; /* Espacio para el header fijo */
+        }
+        
+        /* Overlay oscuro sobre la imagen para mejorar legibilidad */
         .hero::before {
             content: '';
             position: absolute;
@@ -185,290 +399,290 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="none"/><circle cx="50" cy="50" r="1" fill="white" opacity="0.3"/></svg>');
-            opacity: 0.1;
-            animation: float 20s infinite linear;
-        }
-        
-        @keyframes float {
-            from { background-position: 0 0; }
-            to { background-position: 100px 100px; }
+            background: linear-gradient(135deg, 
+                rgba(13, 43, 82, 0.85), 
+                rgba(27, 75, 138, 0.75)
+            );
         }
         
         .hero-content {
             position: relative;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 8rem 2rem 4rem;
             z-index: 2;
+            color: white;
+            max-width: 800px;
         }
         
         .hero h1 {
-            font-size: clamp(3rem, 8vw, 6.5rem);
             color: white;
-            margin-bottom: 1rem;
-            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-            animation: slideInUp 0.8s ease-out;
-        }
-        
-        .hero h1 span {
-            color: var(--warm-white);
-            display: block;
-            font-size: clamp(1.5rem, 4vw, 3rem);
-        }
-        
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            margin-bottom: var(--espacio-md);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
         
         .hero-subtitle {
-            font-size: clamp(1.2rem, 3vw, 1.8rem);
-            color: var(--warm-white);
-            margin-bottom: 2.5rem;
-            max-width: 700px;
-            animation: slideInUp 0.8s ease-out 0.2s both;
+            font-size: 1.25rem;
+            margin-bottom: var(--espacio-md);
+            line-height: 1.8;
         }
         
         .hero-ctas {
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
-            animation: slideInUp 0.8s ease-out 0.4s both;
+            margin-bottom: var(--espacio-lg);
         }
         
-        .cta-primary {
-            background: white;
-            color: var(--terracotta-primary);
+        .btn-hero {
             padding: 1.25rem 3rem;
-            font-size: 1.3rem;
-            font-weight: 700;
+            font-size: 1.125rem;
             border-radius: 50px;
-            text-decoration: none;
-            box-shadow: var(--shadow-lg);
+            font-weight: 700;
             transition: all 0.3s ease;
             display: inline-flex;
             align-items: center;
             gap: 0.75rem;
         }
         
-        .cta-primary:hover {
+        .btn-hero-primary {
+            background: white;
+            color: var(--azul-principal);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        .btn-hero-primary:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 12px 40px rgba(0,0,0,0.3);
         }
         
-        .cta-secondary {
+        .btn-hero-secondary {
             background: rgba(255, 255, 255, 0.15);
             backdrop-filter: blur(10px);
             color: white;
-            padding: 1.25rem 3rem;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 50px;
-            text-decoration: none;
             border: 2px solid rgba(255, 255, 255, 0.5);
-            transition: all 0.3s ease;
         }
         
-        .cta-secondary:hover {
+        .btn-hero-secondary:hover {
             background: rgba(255, 255, 255, 0.25);
             border-color: white;
             transform: translateY(-2px);
         }
         
+        /* Badges de confianza en el hero */
         .trust-badges {
             display: flex;
             gap: 3rem;
-            margin-top: 3rem;
             flex-wrap: wrap;
-            animation: slideInUp 0.8s ease-out 0.6s both;
         }
         
         .badge {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            color: white;
-            font-size: 1.1rem;
+            gap: 1rem;
         }
         
         .badge-icon {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             background: rgba(255, 255, 255, 0.2);
             backdrop-filter: blur(10px);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.75rem;
         }
         
-        /* Services Section */
-        .services {
-            padding: 6rem 2rem;
-            background: var(--warm-white);
+        .badge-text {
+            text-align: left;
         }
         
-        .section-title {
+        .badge-text strong {
+            display: block;
+            font-size: 1.125rem;
+        }
+        
+        .badge-text span {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+        
+        /* ============================================
+           SECCIÓN DE SERVICIOS
+           Grid de tarjetas con los servicios principales
+           ============================================ */
+        .servicios {
+            padding: var(--espacio-xl) 0;
+            background: var(--blanco);
+        }
+        
+        .section-header {
             text-align: center;
-            margin-bottom: 1rem;
+            max-width: 800px;
+            margin: 0 auto var(--espacio-lg);
         }
         
-        .section-title h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            color: var(--terracotta-primary);
-            margin-bottom: 0.5rem;
+        .section-header h2 {
+            color: var(--azul-principal);
+            margin-bottom: var(--espacio-sm);
         }
         
         .section-subtitle {
-            font-size: 1.2rem;
-            color: var(--slate);
-            text-align: center;
-            margin-bottom: 4rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 1.125rem;
+            color: var(--gris-medio);
         }
         
-        .services-grid {
-            max-width: 1400px;
-            margin: 0 auto;
+        .servicios-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2rem;
+            margin-top: var(--espacio-lg);
         }
         
-        .service-card {
+        .servicio-card {
             background: white;
+            border-radius: 16px;
             padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--sombra-suave);
             transition: all 0.3s ease;
-            border-top: 4px solid var(--terracotta-primary);
+            border-top: 4px solid var(--azul-principal);
         }
         
-        .service-card:hover {
+        .servicio-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--sombra-fuerte);
         }
         
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-light));
+        .servicio-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
             color: white;
-            border-radius: 15px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 1.5rem;
         }
         
-        .service-card h3 {
-            font-size: 1.8rem;
-            color: var(--charcoal);
+        .servicio-card h3 {
+            color: var(--azul-oscuro);
             margin-bottom: 1rem;
         }
         
-        .service-card p {
-            color: var(--slate);
-            margin-bottom: 1.5rem;
+        .servicio-card p {
+            color: var(--gris-medio);
             line-height: 1.7;
+            margin-bottom: 1.5rem;
         }
         
-        .service-features {
+        .servicio-features {
             list-style: none;
             margin-bottom: 1.5rem;
         }
         
-        .service-features li {
+        .servicio-features li {
             padding: 0.5rem 0;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--slate);
+            color: var(--gris-oscuro);
         }
         
-        .service-features li::before {
+        .servicio-features li::before {
             content: '✓';
-            color: var(--terracotta-primary);
+            color: var(--naranja-acento);
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.25rem;
         }
         
-        /* Urgency Section */
-        .urgency {
-            background: linear-gradient(135deg, var(--terracotta-dark), var(--terracotta-primary));
-            padding: 5rem 2rem;
+        .btn-servicio {
+            width: 100%;
+            text-align: center;
+            padding: 0.875rem;
+            background: var(--azul-principal);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-servicio:hover {
+            background: var(--azul-oscuro);
+            transform: translateX(5px);
+        }
+        
+        /* ============================================
+           SECCIÓN DE URGENCIAS
+           Banner destacado con CTA de emergencias
+           ============================================ */
+        .urgencias {
+            /* Imagen de fondo - Reemplaza 'img2.jpg' con tu imagen */
+            /* Tamaño recomendado: 1920x600px */
+            background-image: url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax */
+            padding: var(--espacio-xl) 0;
             position: relative;
-            overflow: hidden;
         }
         
-        .urgency::before {
+        .urgencias::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -10%;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            border-radius: 50%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(230, 126, 34, 0.9), 
+                rgba(211, 84, 0, 0.85)
+            );
         }
         
-        .urgency-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
+        .urgencias-content {
             position: relative;
             z-index: 2;
-        }
-        
-        .urgency h2 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            text-align: center;
             color: white;
-            margin-bottom: 1rem;
         }
         
-        .urgency-subtitle {
+        .urgencias h2 {
+            color: white;
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        .urgencias-subtitle {
             font-size: 1.5rem;
-            color: var(--warm-white);
-            margin-bottom: 3rem;
+            margin-bottom: var(--espacio-lg);
         }
         
-        .urgency-features {
+        .urgencias-features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: var(--espacio-lg);
         }
         
-        .urgency-feature {
+        .urgencia-feature {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             padding: 2rem;
-            border-radius: 15px;
+            border-radius: 12px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .urgency-feature h3 {
-            font-size: 2rem;
+        .urgencia-feature h3 {
+            font-size: 2.5rem;
             color: white;
             margin-bottom: 0.5rem;
         }
         
-        .urgency-feature p {
-            color: var(--warm-white);
-            font-size: 1.1rem;
+        .urgencia-feature p {
+            font-size: 1.125rem;
+            margin: 0;
         }
         
+        /* Botón con efecto de pulsación */
         .pulse-button {
             position: relative;
             display: inline-block;
@@ -499,100 +713,136 @@
             }
         }
         
-        /* Coverage Section */
-        .coverage {
-            padding: 6rem 2rem;
+        /* ============================================
+           SECCIÓN POR QUÉ ELEGIRNOS
+           Ventajas competitivas de la empresa
+           ============================================ */
+        .por-que-elegirnos {
+            padding: var(--espacio-xl) 0;
+            background: var(--azul-claro);
+        }
+        
+        .ventajas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: var(--espacio-lg);
+        }
+        
+        .ventaja {
+            text-align: center;
+        }
+        
+        .ventaja-numero {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--naranja-acento);
+            margin-bottom: 1rem;
+            font-family: var(--fuente-titulos);
+        }
+        
+        .ventaja h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+        
+        .ventaja p {
+            color: var(--gris-medio);
+            line-height: 1.7;
+        }
+        
+        /* ============================================
+           SECCIÓN DE COBERTURA GEOGRÁFICA
+           Mapa de municipios donde opera la empresa
+           ============================================ */
+        .cobertura {
+            padding: var(--espacio-xl) 0;
             background: white;
         }
         
-        .coverage-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .municipalities {
+        .municipios-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 1rem;
-            margin-top: 3rem;
+            margin-top: var(--espacio-lg);
         }
         
-        .municipality {
-            background: var(--light-gray);
+        .municipio {
+            background: var(--gris-claro);
             padding: 1.25rem;
-            border-radius: 10px;
+            border-radius: 8px;
             text-align: center;
-            font-weight: 500;
-            color: var(--charcoal);
+            font-weight: 600;
+            color: var(--gris-oscuro);
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
         
-        .municipality:hover {
-            background: var(--terracotta-primary);
+        .municipio:hover {
+            background: var(--azul-principal);
             color: white;
-            border-color: var(--terracotta-dark);
+            border-color: var(--azul-oscuro);
             transform: translateY(-3px);
+            box-shadow: var(--sombra-media);
         }
         
-        .municipality.featured {
-            background: var(--terracotta-light);
+        .municipio.destacado {
+            background: var(--azul-principal);
             color: white;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.125rem;
         }
         
-        /* Testimonials Section */
-        .testimonials {
-            padding: 6rem 2rem;
-            background: var(--warm-white);
+        /* ============================================
+           SECCIÓN DE TESTIMONIOS
+           Reseñas de clientes con integración Google
+           ============================================ */
+        .testimonios {
+            padding: var(--espacio-xl) 0;
+            background: var(--azul-claro);
         }
         
-        .testimonials-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .testimonials-grid {
+        .testimonios-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
+            margin-top: var(--espacio-lg);
         }
         
-        .testimonial {
+        .testimonio {
             background: white;
             padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow-md);
+            border-radius: 16px;
+            box-shadow: var(--sombra-media);
             position: relative;
         }
         
-        .testimonial::before {
+        .testimonio::before {
             content: '"';
             position: absolute;
             top: 1rem;
             left: 1.5rem;
             font-size: 5rem;
-            color: var(--terracotta-primary);
-            opacity: 0.2;
+            color: var(--azul-principal);
+            opacity: 0.1;
             font-family: Georgia, serif;
         }
         
         .stars {
             color: #F39C12;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
             margin-bottom: 1rem;
         }
         
-        .testimonial-text {
-            font-size: 1.1rem;
+        .testimonio-text {
+            font-size: 1.05rem;
             line-height: 1.8;
-            color: var(--slate);
+            color: var(--gris-oscuro);
             margin-bottom: 1.5rem;
             position: relative;
         }
         
-        .testimonial-author {
+        .testimonio-author {
             display: flex;
             align-items: center;
             gap: 1rem;
@@ -601,116 +851,92 @@
         .author-avatar {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, var(--terracotta-primary), var(--terracotta-light));
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 1.25rem;
         }
         
         .author-info h4 {
-            font-size: 1.1rem;
-            color: var(--charcoal);
+            font-size: 1.05rem;
+            color: var(--azul-oscuro);
             margin-bottom: 0.25rem;
         }
         
         .author-info p {
-            font-size: 0.95rem;
-            color: var(--slate);
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+            margin: 0;
         }
         
-        /* Why Us Section */
-        .why-us {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--charcoal), var(--slate));
-            color: white;
-        }
-        
-        .why-us-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .why-us-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-        
-        .why-item {
-            text-align: center;
-        }
-        
-        .why-number {
-            font-size: 4rem;
-            font-weight: 700;
-            color: var(--terracotta-primary);
-            margin-bottom: 1rem;
-        }
-        
-        .why-item h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-        }
-        
-        .why-item p {
-            color: var(--light-gray);
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-        
-        /* Final CTA Section */
-        .final-cta {
-            padding: 6rem 2rem;
+        /* ============================================
+           SECCIÓN CTA FINAL
+           Llamada a la acción antes del mapa
+           ============================================ */
+        .cta-final {
+            padding: var(--espacio-xl) 0;
             background: white;
             text-align: center;
         }
         
-        .final-cta-content {
-            max-width: 900px;
-            margin: 0 auto;
+        .cta-final h2 {
+            color: var(--azul-principal);
+            margin-bottom: var(--espacio-sm);
         }
         
-        .final-cta h2 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            color: var(--terracotta-primary);
-            margin-bottom: 1.5rem;
+        .cta-final p {
+            font-size: 1.25rem;
+            color: var(--gris-medio);
+            max-width: 700px;
+            margin: 0 auto var(--espacio-lg);
         }
         
-        .final-cta p {
-            font-size: 1.3rem;
-            color: var(--slate);
-            margin-bottom: 3rem;
+        /* ============================================
+           MAPA DE GOOGLE MAPS
+           Ubicación de la empresa en el mapa
+           ============================================ */
+        .mapa-section {
+            height: 500px;
+            position: relative;
         }
         
-        /* Footer */
-        footer {
-            background: var(--charcoal);
+        .mapa-section iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(20%); /* Efecto visual sutil */
+        }
+        
+        /* ============================================
+           FOOTER
+           Pie de página con enlaces, contacto y SEO
+           ============================================ */
+        .footer {
+            background: var(--azul-oscuro);
             color: white;
-            padding: 4rem 2rem 2rem;
+            padding: var(--espacio-lg) 0 var(--espacio-md);
         }
         
         .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 3rem;
-            margin-bottom: 3rem;
+            margin-bottom: var(--espacio-lg);
         }
         
         .footer-section h3 {
-            font-size: 1.5rem;
+            color: var(--naranja-acento);
             margin-bottom: 1.5rem;
-            color: var(--terracotta-light);
+            font-size: 1.25rem;
         }
         
-        .footer-section p, .footer-section li {
-            color: var(--light-gray);
+        .footer-section p,
+        .footer-section li {
+            color: rgba(255, 255, 255, 0.8);
             margin-bottom: 0.75rem;
             line-height: 1.7;
         }
@@ -720,24 +946,54 @@
         }
         
         .footer-section a {
-            color: var(--light-gray);
-            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
             transition: color 0.3s ease;
         }
         
         .footer-section a:hover {
-            color: var(--terracotta-light);
+            color: var(--naranja-acento);
+        }
+        
+        .footer-logo img {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: var(--naranja-acento);
+            transform: translateY(-3px);
         }
         
         .footer-bottom {
             text-align: center;
-            padding-top: 2rem;
+            padding-top: var(--espacio-md);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--light-gray);
+            color: rgba(255, 255, 255, 0.6);
         }
         
-        /* Floating Call Button */
-        .floating-call {
+        /* ============================================
+           BOTÓN FLOTANTE DE WHATSAPP
+           Botón fijo en la esquina inferior derecha
+           ============================================ */
+        .whatsapp-float {
             position: fixed;
             bottom: 2rem;
             right: 2rem;
@@ -750,7 +1006,7 @@
             50% { transform: translateY(-10px); }
         }
         
-        .floating-call-btn {
+        .whatsapp-btn {
             width: 70px;
             height: 70px;
             background: linear-gradient(135deg, #25D366, #128C7E);
@@ -759,18 +1015,19 @@
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 2rem;
-            text-decoration: none;
+            font-size: 2.5rem;
             box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
             transition: all 0.3s ease;
+            position: relative;
         }
         
-        .floating-call-btn:hover {
+        .whatsapp-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7);
         }
         
-        .floating-call-btn::before {
+        /* Efecto de ondas en el botón de WhatsApp */
+        .whatsapp-btn::before {
             content: '';
             position: absolute;
             width: 100%;
@@ -791,27 +1048,73 @@
             }
         }
         
-        /* Responsive */
+        /* ============================================
+           RESPONSIVE - DISEÑO MÓVIL
+           Ajustes para pantallas pequeñas
+           ============================================ */
         @media (max-width: 768px) {
-            .header-phone {
+            /* Header móvil */
+            .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--sombra-fuerte);
             }
             
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .header-actions {
+                gap: 0.5rem;
+            }
+            
+            .btn-phone {
+                display: none; /* Ocultar teléfono en móvil para ahorrar espacio */
+            }
+            
+            /* Menú desplegable en móvil */
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                display: none;
+                margin-top: 0.5rem;
+            }
+            
+            .dropdown.active .dropdown-menu {
+                display: block;
+            }
+            
+            .dropdown-menu.two-columns {
+                grid-template-columns: 1fr;
+                min-width: auto;
+            }
+            
+            /* Hero móvil */
             .hero {
-                background-attachment: scroll;
-            }
-            
-            .hero-content {
-                padding: 6rem 1.5rem 3rem;
+                background-attachment: scroll; /* Desactivar parallax en móvil por rendimiento */
+                min-height: 80vh;
+                padding: var(--espacio-lg) 0;
             }
             
             .hero-ctas {
                 flex-direction: column;
             }
             
-            .cta-primary, .cta-secondary {
+            .btn-hero {
                 width: 100%;
-                text-align: center;
                 justify-content: center;
             }
             
@@ -819,296 +1122,453 @@
                 justify-content: center;
             }
             
-            .services-grid, .testimonials-grid {
+            /* Grids a una columna */
+            .servicios-grid,
+            .testimonios-grid {
                 grid-template-columns: 1fr;
             }
             
-            .municipalities {
+            .municipios-grid {
                 grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             }
             
-            .floating-call {
+            /* Botón WhatsApp más pequeño en móvil */
+            .whatsapp-float {
                 bottom: 1.5rem;
                 right: 1.5rem;
             }
             
-            .floating-call-btn {
+            .whatsapp-btn {
                 width: 60px;
                 height: 60px;
-                font-size: 1.7rem;
+                font-size: 2rem;
+            }
+            
+            /* Mapa más pequeño en móvil */
+            .mapa-section {
+                height: 350px;
             }
         }
         
-        /* Scroll Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
+        /* Tablets */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .servicios-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonios-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <div class="header-content">
-            <a href="#" class="logo">
-                TEJADOS OVIEDO Y ASTURIAS
-                <span>Expertos desde 1998</span>
-            </a>
-            <div class="header-actions">
-                <a href="tel:+34693743627" class="header-phone">
-                    📞 693 743 627
+    <!-- ============================================
+         HEADER - BARRA DE NAVEGACIÓN SUPERIOR
+         Modifica el logo, menús y botones aquí
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo - Reemplaza 'logo-cd.jpg' con tu logo real -->
+                <!-- Tamaño recomendado logo: 200x80px (fondo transparente PNG) -->
+                <a href="#inicio" class="logo">
+                    <!-- <img src="img/cd2.png" alt="Logo Cubiertas David"> -->
+                    <div class="logo-text">
+                        <h1>CUBIERTAS DAVID</h1>
+                        <span>Expertos desde 1998</span>
+                    </div>
                 </a>
-                <a href="tel:+34693743627" class="cta-button">Llamar Ahora</a>
+                
+                <!-- Navegación principal -->
+                <nav class="nav">
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#inicio">Inicio</a></li>
+                        
+                        <!-- Menú desplegable de Servicios -->
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">Servicios</span>
+                            <div class="dropdown-menu">
+                                <a href="#servicios">Reforma Integral de Tejados</a>
+                                <a href="#servicios">Reparación de Tejados</a>
+                                <a href="#servicios">Impermeabilización</a>
+                                <a href="#servicios">Canalones y Bajantes</a>
+                                <a href="#servicios">Panel Sándwich</a>
+                                <a href="#servicios">Tejados de Pizarra</a>
+                                <a href="#servicios">Aislamiento Térmico</a>
+                                <a href="#servicios">Urgencias 24/7</a>
+                            </div>
+                        </li>
+                        
+                        <!-- Menú desplegable de Municipios -->
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">Municipios</span>
+                            <div class="dropdown-menu two-columns">
+                                <!-- Columna 1 -->
+                                <a href="#cobertura">Oviedo</a>
+                                <a href="#cobertura">Gijón</a>
+                                <a href="#cobertura">Avilés</a>
+                                <a href="#cobertura">Siero</a>
+                                <a href="#cobertura">Langreo</a>
+                                <a href="#cobertura">Mieres</a>
+                                <!-- Columna 2 -->
+                                <a href="#cobertura">Castrillón</a>
+                                <a href="#cobertura">Llanera</a>
+                                <a href="#cobertura">Corvera</a>
+                                <a href="#cobertura">Villaviciosa</a>
+                                <a href="#cobertura">Llanes</a>
+                                <a href="#cobertura">Toda Asturias ➜</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    
+                    <!-- Botones de acción en el header -->
+                    <div class="header-actions">
+                        <a href="tel:+34693743627" class="btn-phone">
+                            📞 693 743 627
+                        </a>
+                        <a href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" class="btn-whatsapp">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Botón hamburguesa para móvil -->
+                    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>
-                PROTEGE TU HOGAR
-                <span>Expertos en Tejados por Toda Asturias</span>
-            </h1>
-            <p class="hero-subtitle">
-                Más de 25 años resolviendo goteras, reparando tejados y protegiendo hogares en Oviedo, Gijón, Avilés y toda la región. Servicio de urgencias 24/7.
-            </p>
-            <div class="hero-ctas">
-                <a href="tel:+34693743627" class="cta-primary">
-                    📞 Llamar 693 743 627
-                </a>
-                <a href="#servicios" class="cta-secondary">
-                    Ver Servicios
-                </a>
-            </div>
-            <div class="trust-badges">
-                <div class="badge">
-                    <div class="badge-icon">✓</div>
-                    <div>
-                        <strong>Respuesta</strong><br>
-                        en 24h
-                    </div>
+    
+    <!-- ============================================
+         HERO - SECCIÓN PRINCIPAL CON PARALLAX
+         Cambia la imagen de fondo en el CSS (línea ~400)
+         ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tu Tejadista de Confianza en Asturias</h1>
+                <p class="hero-subtitle">
+                    Más de 25 años protegiendo hogares asturianos. Servicio profesional sin intermediarios, 
+                    con garantía por escrito. Respondemos en menos de 2 horas. 100% empresa asturiana.
+                </p>
+                
+                <!-- Botones de llamada a la acción -->
+                <div class="hero-ctas">
+                    <a href="tel:+34693743627" class="btn-hero btn-hero-primary">
+                        📞 Llamar 693 743 627
+                    </a>
+                    <a href="#servicios" class="btn-hero btn-hero-secondary">
+                        Ver Servicios
+                    </a>
                 </div>
-                <div class="badge">
-                    <div class="badge-icon">⭐</div>
-                    <div>
-                        <strong>4.9/5</strong><br>
-                        127 Reseñas
+                
+                <!-- Badges de confianza -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <div class="badge-icon">⏱</div>
+                        <div class="badge-text">
+                            <strong>Respuesta</strong>
+                            <span>en menos de 2 horas</span>
+                        </div>
                     </div>
-                </div>
-                <div class="badge">
-                    <div class="badge-icon">🛠</div>
-                    <div>
-                        <strong>+25 Años</strong><br>
-                        Experiencia
+                    <div class="badge">
+                        <div class="badge-icon">⭐</div>
+                        <div class="badge-text">
+                            <strong>4.9/5 Estrellas</strong>
+                            <span>47 reseñas Google</span>
+                        </div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">🛠</div>
+                        <div class="badge-text">
+                            <strong>+25 Años</strong>
+                            <span>de experiencia</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Services Section -->
-    <section class="services" id="servicios">
-        <div class="section-title fade-in">
-            <h2>NUESTROS SERVICIOS</h2>
-            <p class="section-subtitle">
-                Soluciones completas para todo tipo de tejados y cubiertas en Asturias
-            </p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card fade-in">
-                <div class="service-icon">🏠</div>
-                <h3>REPARACIÓN DE TEJADOS</h3>
-                <p>Especialistas en reparación de goteras, tejas rotas, filtraciones y daños por temporal.</p>
-                <ul class="service-features">
-                    <li>Detección de filtraciones</li>
-                    <li>Sustitución de tejas</li>
-                    <li>Reparación de canalones</li>
-                    <li>Impermeabilización</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
+    
+    <!-- ============================================
+         SERVICIOS - CATÁLOGO DE SERVICIOS
+         Añade o quita servicios modificando los divs .servicio-card
+         ============================================ -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p class="section-subtitle">
+                    Soluciones completas para todo tipo de tejados y cubiertas en toda Asturias
+                </p>
             </div>
             
-            <div class="service-card fade-in">
-                <div class="service-icon">🔨</div>
-                <h3>INSTALACIÓN COMPLETA</h3>
-                <p>Instalamos tejados nuevos de pizarra, teja árabe, teja mixta y panel sándwich.</p>
-                <ul class="service-features">
-                    <li>Tejados de pizarra</li>
-                    <li>Teja árabe y mixta</li>
-                    <li>Cubiertas metálicas</li>
-                    <li>Aislamientos térmicos</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-icon">💧</div>
-                <h3>CANALONES Y BAJANTES</h3>
-                <p>Instalación, reparación y limpieza de sistemas de evacuación de agua.</p>
-                <ul class="service-features">
-                    <li>Instalación de canalones</li>
-                    <li>Limpieza y desatascos</li>
-                    <li>Reparación de bajantes</li>
-                    <li>Sistemas de recogida</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-icon">🔍</div>
-                <h3>INSPECCIÓN Y MANTENIMIENTO</h3>
-                <p>Revisiones preventivas para evitar problemas mayores y alargar la vida útil de tu tejado.</p>
-                <ul class="service-features">
-                    <li>Inspección con dron</li>
-                    <li>Informes detallados</li>
-                    <li>Planes de mantenimiento</li>
-                    <li>Garantía de trabajos</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-icon">🌧</div>
-                <h3>IMPERMEABILIZACIÓN</h3>
-                <p>Protección total contra humedades con los mejores sistemas del mercado.</p>
-                <ul class="service-features">
-                    <li>Membranas impermeables</li>
-                    <li>Revestimientos especiales</li>
-                    <li>Terrazas y cubiertas planas</li>
-                    <li>Tratamientos anti-musgo</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Pedir Presupuesto</a>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-icon">⚡</div>
-                <h3>URGENCIAS 24/7</h3>
-                <p>Servicio de emergencias disponible todos los días del año para goteras y daños graves.</p>
-                <ul class="service-features">
-                    <li>Respuesta inmediata</li>
-                    <li>Disponibilidad 24 horas</li>
-                    <li>Fines de semana y festivos</li>
-                    <li>Reparaciones temporales</li>
-                </ul>
-                <a href="tel:+34693743627" class="cta-button" style="width: 100%; text-align: center;">Llamada de Urgencia</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgency Section -->
-    <section class="urgency">
-        <div class="urgency-content">
-            <h2>¿GOTERAS? ¿FILTRACIONES?</h2>
-            <p class="urgency-subtitle">Atendemos emergencias en menos de 2 horas</p>
-            <div class="urgency-features">
-                <div class="urgency-feature fade-in">
-                    <h3>⏱ 2 HORAS</h3>
-                    <p>Tiempo medio de respuesta en urgencias</p>
+            <div class="servicios-grid">
+                <!-- Servicio 1 - Copia este bloque para añadir más servicios -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🏠</div>
+                    <h3>Reforma Integral de Tejados</h3>
+                    <p>Rehabilitación completa de cubiertas con las mejores técnicas y materiales del mercado.</p>
+                    <ul class="servicio-features">
+                        <li>Diagnóstico profesional</li>
+                        <li>Cambio de estructura</li>
+                        <li>Impermeabilización total</li>
+                        <li>Garantía 10 años</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
                 </div>
-                <div class="urgency-feature fade-in">
-                    <h3>24/7</h3>
-                    <p>Disponibles todos los días del año</p>
+                
+                <!-- Servicio 2 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🔨</div>
+                    <h3>Reparación de Tejados</h3>
+                    <p>Solución rápida y definitiva para goteras, tejas rotas y filtraciones.</p>
+                    <ul class="servicio-features">
+                        <li>Detección de goteras</li>
+                        <li>Sustitución de tejas</li>
+                        <li>Sellado de grietas</li>
+                        <li>Trabajo garantizado</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
                 </div>
-                <div class="urgency-feature fade-in">
-                    <h3>100%</h3>
-                    <p>Satisfacción garantizada</p>
+                
+                <!-- Servicio 3 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">💧</div>
+                    <h3>Impermeabilización</h3>
+                    <p>Protección total contra humedades con sistemas de última generación.</p>
+                    <ul class="servicio-features">
+                        <li>Membranas EPDM/TPO</li>
+                        <li>Poliuretano proyectado</li>
+                        <li>Tela asfáltica</li>
+                        <li>Cubiertas y terrazas</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
                 </div>
-            </div>
-            <div class="pulse-button">
-                <a href="tel:+34693743627" class="cta-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
-                    🚨 LLAMAR URGENCIAS: 693 743 627
-                </a>
+                
+                <!-- Servicio 4 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🌊</div>
+                    <h3>Canalones y Bajantes</h3>
+                    <p>Instalación, reparación y limpieza de sistemas de evacuación.</p>
+                    <ul class="servicio-features">
+                        <li>Aluminio continuo</li>
+                        <li>Zinc y cobre</li>
+                        <li>Limpieza y desatascos</li>
+                        <li>Sistemas anti-aves</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">📐</div>
+                    <h3>Panel Sándwich</h3>
+                    <p>Instalación de cubiertas con aislamiento térmico y acústico superior.</p>
+                    <ul class="servicio-features">
+                        <li>Máximo aislamiento</li>
+                        <li>Instalación rápida</li>
+                        <li>Naves industriales</li>
+                        <li>Varios grosores</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">⚡</div>
+                    <h3>Urgencias 24/7</h3>
+                    <p>Servicio de emergencias disponible todos los días del año.</p>
+                    <ul class="servicio-features">
+                        <li>Respuesta inmediata</li>
+                        <li>Disponibilidad 24h</li>
+                        <li>Fines de semana</li>
+                        <li>Reparaciones temporales</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Llamada Urgente ➜</a>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Coverage Section -->
-    <section class="coverage" id="cobertura">
-        <div class="coverage-content">
-            <div class="section-title fade-in">
-                <h2>SERVICIO EN TODA ASTURIAS</h2>
+    
+    <!-- ============================================
+         URGENCIAS - BANNER CON PARALLAX
+         Cambia la imagen de fondo en el CSS (línea ~780)
+         ============================================ -->
+    <section class="urgencias">
+        <div class="container">
+            <div class="urgencias-content">
+                <h2>¿GOTERAS? ¿FILTRACIONES DE URGENCIA?</h2>
+                <p class="urgencias-subtitle">Atendemos emergencias en menos de 2 horas</p>
+                
+                <div class="urgencias-features">
+                    <div class="urgencia-feature">
+                        <h3>⏱ 2 HORAS</h3>
+                        <p>Tiempo medio de respuesta</p>
+                    </div>
+                    <div class="urgencia-feature">
+                        <h3>24/7</h3>
+                        <p>Disponibles todos los días</p>
+                    </div>
+                    <div class="urgencia-feature">
+                        <h3>100%</h3>
+                        <p>Satisfacción garantizada</p>
+                    </div>
+                </div>
+                
+                <div class="pulse-button">
+                    <a href="tel:+34693743627" class="btn-hero btn-hero-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+                        🚨 LLAMAR URGENCIAS: 693 743 627
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         POR QUÉ ELEGIRNOS - VENTAJAS COMPETITIVAS
+         Modifica los números y textos según tus datos reales
+         ============================================ -->
+    <section class="por-que-elegirnos">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por Qué Elegir Cubiertas David?</h2>
+                <p class="section-subtitle">
+                    Compromiso, experiencia y resultados que hablan por sí mismos
+                </p>
+            </div>
+            
+            <div class="ventajas-grid">
+                <div class="ventaja">
+                    <div class="ventaja-numero">25+</div>
+                    <h3>AÑOS DE EXPERIENCIA</h3>
+                    <p>Más de dos décadas protegiendo hogares asturianos contra las inclemencias del tiempo.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">47</div>
+                    <h3>CLIENTES SATISFECHOS</h3>
+                    <p>Familias que confían en nosotros y nos recomiendan a sus vecinos y conocidos.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">2h</div>
+                    <h3>TIEMPO DE RESPUESTA</h3>
+                    <p>Respondemos en menos de 2 horas. WhatsApp directo con el jefe de obra.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">10</div>
+                    <h3>AÑOS DE GARANTÍA</h3>
+                    <p>Garantía por escrito en reformas integrales. Tranquilidad total para tu hogar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         COBERTURA GEOGRÁFICA - MUNICIPIOS
+         Añade o quita municipios según tu área de servicio
+         ============================================ -->
+    <section class="cobertura" id="cobertura">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servicio en Toda Asturias</h2>
                 <p class="section-subtitle">
                     Trabajamos en todos los municipios de la región con el mismo compromiso de calidad
                 </p>
             </div>
-            <div class="municipalities">
-                <div class="municipality featured">Oviedo</div>
-                <div class="municipality featured">Gijón</div>
-                <div class="municipality featured">Avilés</div>
-                <div class="municipality">Siero</div>
-                <div class="municipality">Langreo</div>
-                <div class="municipality">Mieres</div>
-                <div class="municipality">Castrillón</div>
-                <div class="municipality">Llanera</div>
-                <div class="municipality">Corvera</div>
-                <div class="municipality">Carreño</div>
-                <div class="municipality">Gozón</div>
-                <div class="municipality">Noreña</div>
-                <div class="municipality">Las Regueras</div>
-                <div class="municipality">Aller</div>
-                <div class="municipality">Laviana</div>
-                <div class="municipality">San Martín del Rey Aurelio</div>
-                <div class="municipality">Lena</div>
-                <div class="municipality">Nava</div>
-                <div class="municipality">Bimenes</div>
-                <div class="municipality">Piloña</div>
-                <div class="municipality">Villaviciosa</div>
-                <div class="municipality">Colunga</div>
-                <div class="municipality">Ribadesella</div>
-                <div class="municipality">Cangas de Onís</div>
-                <div class="municipality">Llanes</div>
-                <div class="municipality">Parres</div>
-                <div class="municipality">Cabrales</div>
-                <div class="municipality">Valdés</div>
-                <div class="municipality">Navia</div>
-                <div class="municipality">Tineo</div>
-                <div class="municipality">Salas</div>
-                <div class="municipality">Pravia</div>
-                <div class="municipality">Cudillero</div>
-                <div class="municipality">Muros de Nalón</div>
-                <div class="municipality">Soto del Barco</div>
-                <div class="municipality">+ Todos los concejos</div>
+            
+            <div class="municipios-grid">
+                <!-- Municipios destacados - La clase 'destacado' los resalta visualmente -->
+                <div class="municipio destacado">Oviedo</div>
+                <div class="municipio destacado">Gijón</div>
+                <div class="municipio destacado">Avilés</div>
+                
+                <!-- Resto de municipios - Ordena alfabéticamente o por importancia -->
+                <div class="municipio">Siero</div>
+                <div class="municipio">Langreo</div>
+                <div class="municipio">Mieres</div>
+                <div class="municipio">Castrillón</div>
+                <div class="municipio">Llanera</div>
+                <div class="municipio">Corvera</div>
+                <div class="municipio">Carreño</div>
+                <div class="municipio">Gozón</div>
+                <div class="municipio">Noreña</div>
+                <div class="municipio">Las Regueras</div>
+                <div class="municipio">Aller</div>
+                <div class="municipio">Laviana</div>
+                <div class="municipio">San Martín del Rey Aurelio</div>
+                <div class="municipio">Lena</div>
+                <div class="municipio">Nava</div>
+                <div class="municipio">Bimenes</div>
+                <div class="municipio">Piloña</div>
+                <div class="municipio">Villaviciosa</div>
+                <div class="municipio">Colunga</div>
+                <div class="municipio">Ribadesella</div>
+                <div class="municipio">Cangas de Onís</div>
+                <div class="municipio">Llanes</div>
+                <div class="municipio">Parres</div>
+                <div class="municipio">Cabrales</div>
+                <div class="municipio">Valdés</div>
+                <div class="municipio">Navia</div>
+                <div class="municipio">Tineo</div>
+                <div class="municipio">Salas</div>
+                <div class="municipio">Pravia</div>
+                <div class="municipio">Cudillero</div>
+                <div class="municipio">Muros de Nalón</div>
+                <div class="municipio">Soto del Barco</div>
+                <div class="municipio">Grado</div>
+                <div class="municipio">Cangas del Narcea</div>
+                <div class="municipio">+ Todos los concejos</div>
             </div>
         </div>
     </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials" id="opiniones">
-        <div class="testimonials-content">
-            <div class="section-title fade-in">
-                <h2>LO QUE DICEN NUESTROS CLIENTES</h2>
+    
+    <!-- ============================================
+         TESTIMONIOS - RESEÑAS DE CLIENTES
+         Reemplaza con tus testimonios reales de Google
+         ============================================ -->
+    <section class="testimonios" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
                 <p class="section-subtitle">
-                    Más de 127 familias asturianas confían en nuestro trabajo
+                    Más de 47 familias asturianas confían en nuestro trabajo
                 </p>
             </div>
-            <div class="testimonials-grid">
-                <div class="testimonial fade-in">
+            
+            <div class="testimonios-grid">
+                <!-- Testimonio 1 - Copia este bloque para añadir más -->
+                <div class="testimonio">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Tenía goteras graves en el salón y vinieron en menos de 2 horas un domingo. Profesionales, rápidos y el precio muy ajustado. Totalmente recomendables."
+                    <p class="testimonio-text">
+                        "David y su equipo arreglaron las goteras de mi casa en tiempo récord. 
+                        Profesionales, rápidos y el precio muy ajustado. Totalmente recomendables."
                     </p>
-                    <div class="testimonial-author">
+                    <div class="testimonio-author">
                         <div class="author-avatar">MG</div>
                         <div class="author-info">
                             <h4>María González</h4>
-                            <p>Oviedo - Hace 3 meses</p>
+                            <p>Oviedo - Hace 2 meses</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial fade-in">
+                <!-- Testimonio 2 -->
+                <div class="testimonio">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Nos cambiaron todo el tejado de la casa en Gijón. Trabajo impecable, dejaron todo limpio y terminaron antes del plazo. Y el presupuesto sin sorpresas. Muy contentos."
+                    <p class="testimonio-text">
+                        "Reformaron todo el tejado de mi casa en Gijón. Trabajo impecable, 
+                        dejaron todo limpio y terminaron antes del plazo. Muy contentos."
                     </p>
-                    <div class="testimonial-author">
+                    <div class="testimonio-author">
                         <div class="author-avatar">JL</div>
                         <div class="author-info">
                             <h4>José Luis Fernández</h4>
@@ -1117,169 +1577,187 @@
                     </div>
                 </div>
                 
-                <div class="testimonial fade-in">
+                <!-- Testimonio 3 -->
+                <div class="testimonio">
                     <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Excelente servicio. Repararon las goteras del bajo cubierta y además me aconsejaron sobre el mantenimiento. Gente seria y trabajadora. Los recomiendo 100%."
+                    <p class="testimonio-text">
+                        "Excelente servicio. Repararon las goteras del bajo cubierta y me 
+                        aconsejaron sobre el mantenimiento. Gente seria y trabajadora."
                     </p>
-                    <div class="testimonial-author">
+                    <div class="testimonio-author">
                         <div class="author-avatar">AM</div>
                         <div class="author-info">
                             <h4>Ana María Suárez</h4>
-                            <p>Avilés - Hace 2 semanas</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial fade-in">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Llamé por una urgencia de gotera en plena tormenta y vinieron enseguida. Solucionaron el problema temporal esa noche y volvieron a hacer la reparación definitiva. Súper agradecido."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">RA</div>
-                        <div class="author-info">
-                            <h4>Roberto Álvarez</h4>
-                            <p>Mieres - Hace 6 meses</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial fade-in">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Reformaron el tejado de nuestra casa de pueblo en Siero. Trabajo perfecto, usaron materiales de primera calidad y respetaron el estilo tradicional. Muy profesionales."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">CF</div>
-                        <div class="author-info">
-                            <h4>Carmen Fdez</h4>
-                            <p>Siero - Hace 4 meses</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial fade-in">
-                    <div class="stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">
-                        "Nos instalaron canalones nuevos y limpiaron todo el sistema de evacuación. Muy atentos, explicaron todo el proceso y el resultado es excelente. Empresa de confianza."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LM</div>
-                        <div class="author-info">
-                            <h4>Luis Menéndez</h4>
-                            <p>Langreo - Hace 2 meses</p>
+                            <p>Avilés - Hace 3 semanas</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Why Us Section -->
-    <section class="why-us">
-        <div class="why-us-content">
-            <div class="section-title fade-in">
-                <h2 style="color: white;">¿POR QUÉ ELEGIRNOS?</h2>
-                <p class="section-subtitle" style="color: var(--light-gray);">
-                    Compromiso, experiencia y resultados que hablan por sí mismos
-                </p>
-            </div>
-            <div class="why-us-grid">
-                <div class="why-item fade-in">
-                    <div class="why-number">25+</div>
-                    <h3>AÑOS DE EXPERIENCIA</h3>
-                    <p>Más de dos décadas protegiendo hogares asturianos contra las inclemencias del tiempo.</p>
-                </div>
-                <div class="why-item fade-in">
-                    <div class="why-number">127</div>
-                    <h3>CLIENTES SATISFECHOS</h3>
-                    <p>Familias que confían en nosotros y nos recomiendan a sus vecinos y conocidos.</p>
-                </div>
-                <div class="why-item fade-in">
-                    <div class="why-number">24/7</div>
-                    <h3>SERVICIO DE URGENCIAS</h3>
-                    <p>Disponibles cualquier día del año, incluso festivos y fines de semana.</p>
-                </div>
-                <div class="why-item fade-in">
-                    <div class="why-number">100%</div>
-                    <h3>GARANTÍA DE TRABAJOS</h3>
-                    <p>Todos nuestros servicios incluyen garantía escrita de mano de obra y materiales.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="final-cta">
-        <div class="final-cta-content fade-in">
-            <h2>¿LISTO PARA PROTEGER TU HOGAR?</h2>
-            <p>Llama ahora y recibe un presupuesto gratuito sin compromiso. Atendemos tu llamada de inmediato.</p>
-            <a href="tel:+34693743627" class="cta-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+    
+    <!-- ============================================
+         CTA FINAL - LLAMADA A LA ACCIÓN
+         Última oportunidad de conversión antes del mapa
+         ============================================ -->
+    <section class="cta-final" id="contacto">
+        <div class="container">
+            <h2>¿Listo Para Proteger Tu Hogar?</h2>
+            <p>
+                Llama ahora y recibe un presupuesto gratuito sin compromiso. 
+                Atendemos tu llamada de inmediato o responde en menos de 2 horas.
+            </p>
+            <a href="tel:+34693743627" class="btn-hero btn-hero-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
                 📞 693 743 627 - LLAMAR AHORA
             </a>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>TEJADOS OVIEDO Y ASTURIAS</h3>
-                <p>Especialistas en reparación e instalación de tejados con más de 25 años de experiencia en toda Asturias.</p>
-                <p><strong>Horario de Atención:</strong><br>
-                Lunes a Domingo: 24 horas<br>
-                Servicio de urgencias disponible</p>
+    
+    <!-- ============================================
+         MAPA DE GOOGLE MAPS
+         Ubicación en Calle Foncalada, Oviedo
+         Para personalizar: Busca tu dirección en Google Maps
+         ============================================ -->
+    <section class="mapa-section">
+        <!-- 
+            CÓMO PERSONALIZAR ESTE MAPA:
+            1. Ve a Google Maps (maps.google.com)
+            2. Busca tu dirección exacta
+            3. Clic en "Compartir" > "Insertar un mapa"
+            4. Copia el código <iframe> y reemplázalo aquí
+            
+            Actualmente muestra: Calle Foncalada, Oviedo
+        -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.756824!2d-5.8467!3d43.3614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cdf0e8bc9ab%3A0x9c4b8f0a8f0a8f0a!2sCalle%20Foncalada%2C%20Oviedo%2C%20Asturias!5e0!3m2!1ses!2ses!4v1234567890"
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    
+    <!-- ============================================
+         FOOTER - PIE DE PÁGINA CON SEO
+         Información de contacto, enlaces y legal
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sección 1: Sobre la empresa -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <!-- Logo en el footer - Puede ser diferente al del header -->
+                        <img src="https://via.placeholder.com/200x80/FFFFFF/1B4B8A?text=CD" alt="Logo Cubiertas David">
+                    </div>
+                    <p>
+                        Especialistas en reparación e instalación de tejados con más de 25 años de 
+                        experiencia en toda Asturias. 100% empresa local asturiana.
+                    </p>
+                    <p>
+                        <strong>Horario de Atención:</strong><br>
+                        Lunes a Viernes: 8:00 - 20:00<br>
+                        Sábados: 9:00 - 14:00<br>
+                        <strong>Urgencias 24/7 disponibles</strong>
+                    </p>
+                    
+                    <!-- Redes sociales - Añade tus enlaces reales -->
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="https://wa.me/34693743627" class="social-icon" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <!-- Sección 2: Servicios -->
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Reforma de Tejados</a></li>
+                        <li><a href="#servicios">Reparación de Goteras</a></li>
+                        <li><a href="#servicios">Impermeabilización</a></li>
+                        <li><a href="#servicios">Canalones y Bajantes</a></li>
+                        <li><a href="#servicios">Panel Sándwich</a></li>
+                        <li><a href="#servicios">Tejados de Pizarra</a></li>
+                        <li><a href="#servicios">Aislamiento Térmico</a></li>
+                        <li><a href="#servicios">Urgencias 24/7</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Sección 3: Zonas de servicio -->
+                <div class="footer-section">
+                    <h3>Zonas de Servicio</h3>
+                    <ul>
+                        <li><a href="#cobertura">Tejados Oviedo</a></li>
+                        <li><a href="#cobertura">Tejados Gijón</a></li>
+                        <li><a href="#cobertura">Tejados Avilés</a></li>
+                        <li><a href="#cobertura">Tejados Siero</a></li>
+                        <li><a href="#cobertura">Tejados Langreo</a></li>
+                        <li><a href="#cobertura">Tejados Mieres</a></li>
+                        <li><a href="#cobertura">Toda Asturias</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Sección 4: Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>
+                        <strong>Teléfono:</strong><br>
+                        📞 <a href="tel:+34693743627">693 743 627</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong><br>
+                        💬 <a href="https://wa.me/34693743627">693 743 627</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong><br>
+                        ✉️ <a href="mailto:info@cubiertasdavid.com">info@cubiertasdavid.com</a>
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        <strong>Presupuestos gratuitos</strong><br>
+                        Sin compromiso<br>
+                        Respuesta en menos de 2 horas
+                    </p>
+                </div>
             </div>
-            <div class="footer-section">
-                <h3>SERVICIOS</h3>
-                <ul>
-                    <li>Reparación de tejados</li>
-                    <li>Instalación completa</li>
-                    <li>Canalones y bajantes</li>
-                    <li>Impermeabilización</li>
-                    <li>Inspección y mantenimiento</li>
-                    <li>Urgencias 24/7</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>ZONAS DE SERVICIO</h3>
-                <ul>
-                    <li>Oviedo y concejos limítrofes</li>
-                    <li>Gijón y área metropolitana</li>
-                    <li>Avilés y comarca</li>
-                    <li>Cuencas mineras</li>
-                    <li>Occidente asturiano</li>
-                    <li>Oriente de Asturias</li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>CONTACTO</h3>
-                <p><strong>Teléfono:</strong><br>
-                📞 <a href="tel:+34693743627">693 743 627</a></p>
-                <p><strong>WhatsApp:</strong><br>
-                💬 <a href="https://wa.me/34693743627">693 743 627</a></p>
-                <p style="margin-top: 1.5rem;">
-                    <strong>Presupuestos gratuitos</strong><br>
-                    Sin compromiso<br>
-                    Respuesta en 24h
+            
+            <!-- Copyright y legal -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 Cubiertas David. Todos los derechos reservados. | 
+                    <a href="#">Aviso Legal</a> | 
+                    <a href="#">Política de Privacidad</a> | 
+                    <a href="#">Política de Cookies</a>
                 </p>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Tejados Oviedo y Asturias. Todos los derechos reservados. | Servicio profesional en toda Asturias</p>
-        </div>
     </footer>
-
-    <!-- Floating Call Button -->
-    <div class="floating-call">
-        <a href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" class="floating-call-btn" title="Contactar por WhatsApp">
+    
+    <!-- ============================================
+         BOTÓN FLOTANTE DE WHATSAPP
+         Siempre visible en la esquina inferior derecha
+         ============================================ -->
+    <div class="whatsapp-float">
+        <a 
+            href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" 
+            class="whatsapp-btn"
+            aria-label="Contactar por WhatsApp"
+            target="_blank"
+        >
             💬
         </a>
     </div>
-
+    
+    <!-- ============================================
+         JAVASCRIPT - Interactividad de la página
+         ============================================ -->
     <script>
-        // Header scroll effect
+        /* 
+         * Efecto de cambio en el header al hacer scroll
+         * Añade clase 'scrolled' cuando bajas más de 100px
+         */
         window.addEventListener('scroll', function() {
             const header = document.getElementById('header');
             if (window.scrollY > 100) {
@@ -1289,34 +1767,1916 @@
             }
         });
         
-        // Intersection Observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+        /*
+         * Menú móvil hamburguesa
+         * Abre/cierra el menú al hacer clic
+         */
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
         
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                
+                // Anima el icono hamburguesa
+                const spans = this.querySelectorAll('span');
+                spans[0].style.transform = navLinks.classList.contains('active') 
+                    ? 'rotate(45deg) translateY(8px)' : 'none';
+                spans[1].style.opacity = navLinks.classList.contains('active') ? '0' : '1';
+                spans[2].style.transform = navLinks.classList.contains('active') 
+                    ? 'rotate(-45deg) translateY(-8px)' : 'none';
+            });
+        }
+        
+        /*
+         * Menús desplegables en móvil
+         * Permite expandir/contraer los submenús
+         */
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
                 }
             });
-        }, observerOptions);
+        });
         
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        /*
+         * Cerrar menú móvil al hacer clic en un enlace
+         * Mejora la experiencia de usuario
+         */
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    
+                    // Restaura el icono hamburguesa
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+        });
         
-        // Smooth scroll for anchor links
+        /*
+         * Scroll suave con offset para el header fijo
+         * Compensa la altura del header al hacer scroll a secciones
+         */
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    const headerHeight = document.getElementById('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
                     
                     window.scrollTo({
-                        top: offsetPosition,
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- META TAGS SEO - Personaliza estos valores según cada página -->
+    <title>Cubiertas David | Expertos en Tejados y Cubiertas en Asturias | ☎️ 693 743 627</title>
+    <meta name="description" content="Empresa líder en reparación e instalación de tejados en Oviedo, Gijón, Avilés y toda Asturias. Más de 25 años de experiencia. Presupuesto gratuito. Respuesta en menos de 2 horas. ☎️ 693 743 627 | WhatsApp disponible">
+    <meta name="keywords" content="cubiertas david, tejados oviedo, tejados asturias, reparación tejados gijón, empresa tejados avilés, goteras asturias, canalones oviedo, impermeabilización cubiertas, reforma tejados, panel sándwich asturias">
+    
+    <!-- Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Cubiertas David - Tu Tejadista de Confianza en Asturias">
+    <meta property="og:description" content="Más de 25 años protegiendo hogares asturianos. Llamar al 693 743 627">
+    <meta property="og:image" content="./images/logo-cd-social.jpg">
+    <meta property="og:url" content="https://www.cubiertasdavid.com">
+    
+    <!-- Fonts - Cambia estos si quieres usar otras fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org Markup para SEO Local - Google lo usa para mostrar tu negocio correctamente -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RoofingContractor",
+      "name": "Cubiertas David",
+      "image": "./images/logo-cd.jpg",
+      "telephone": "+34693743627",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oviedo",
+        "addressRegion": "Asturias",
+        "addressCountry": "ES"
+      },
+      "areaServed": [
+        {"@type": "City", "name": "Oviedo"},
+        {"@type": "City", "name": "Gijón"},
+        {"@type": "City", "name": "Avilés"},
+        {"@type": "State", "name": "Asturias"}
+      ],
+      "priceRange": "€€",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/cubiertasdavid",
+        "https://www.instagram.com/cubiertasdavid"
+      ]
+    }
+    </script>
+    
+    <style>
+        /* ============================================
+           VARIABLES CSS - Personaliza los colores y valores aquí
+           ============================================ */
+        :root {
+            /* Paleta de colores corporativa - Basada en el logo CD */
+            --azul-principal: #1B4B8A;      /* Azul corporativo principal */
+            --azul-oscuro: #0D2B52;         /* Para headers y footer */
+            --azul-claro: #E8F0FE;          /* Fondos suaves */
+            --naranja-acento: #E67E22;      /* CTAs y elementos de urgencia */
+            --blanco: #FFFFFF;
+            --gris-oscuro: #2C3E50;         /* Texto principal */
+            --gris-claro: #ECF0F1;          /* Fondos alternos */
+            --gris-medio: #7F8C8D;          /* Texto secundario */
+            
+            /* Sombras - Para dar profundidad a los elementos */
+            --sombra-suave: 0 2px 8px rgba(0,0,0,0.1);
+            --sombra-media: 0 4px 16px rgba(0,0,0,0.15);
+            --sombra-fuerte: 0 8px 32px rgba(0,0,0,0.2);
+            
+            /* Espaciados estándar */
+            --espacio-xs: 0.5rem;   /* 8px */
+            --espacio-sm: 1rem;     /* 16px */
+            --espacio-md: 2rem;     /* 32px */
+            --espacio-lg: 4rem;     /* 64px */
+            --espacio-xl: 6rem;     /* 96px */
+            
+            /* Tipografía */
+            --fuente-principal: 'Open Sans', sans-serif;
+            --fuente-titulos: 'Montserrat', sans-serif;
+        }
+        
+        /* ============================================
+           RESET Y ESTILOS GLOBALES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth; /* Scroll suave al hacer clic en anclas */
+        }
+        
+        body {
+            font-family: var(--fuente-principal);
+            color: var(--gris-oscuro);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Títulos - Cambia font-family si quieres otra fuente */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--fuente-titulos);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+        h2 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h3 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+        h4 { font-size: clamp(1.25rem, 3vw, 2rem); }
+        
+        p {
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Utilidades generales */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--espacio-md);
+        }
+        
+        /* ============================================
+           HEADER Y NAVEGACIÓN PRINCIPAL
+           Barra superior fija con logo, menú y botones de contacto
+           ============================================ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: var(--sombra-suave);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        /* Cuando haces scroll, el header se hace más pequeño */
+        .header.scrolled {
+            padding: 0.5rem 0;
+            box-shadow: var(--sombra-media);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        /* Logo - Ajusta el tamaño aquí */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            height: 60px; /* Cambia la altura del logo aquí */
+            width: auto;
+            transition: height 0.3s ease;
+        }
+        
+        .header.scrolled .logo img {
+            height: 45px; /* Logo más pequeño al hacer scroll */
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            color: var(--azul-principal);
+            margin: 0;
+        }
+        
+        .logo-text span {
+            font-size: 0.875rem;
+            color: var(--gris-medio);
+            font-weight: 400;
+        }
+        
+        /* Navegación principal */
+        .nav {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            font-weight: 600;
+            color: var(--gris-oscuro);
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        /* Efecto hover en los enlaces */
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--azul-principal);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Menús desplegables */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-toggle {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .dropdown-toggle::after {
+            content: '▼';
+            font-size: 0.75rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-toggle::after {
+            transform: rotate(180deg);
+        }
+        
+        /* Contenido del desplegable */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            box-shadow: var(--sombra-fuerte);
+            border-radius: 8px;
+            padding: 1rem 0;
+            min-width: 250px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+        
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-menu a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: var(--gris-oscuro);
+            font-weight: 500;
+        }
+        
+        .dropdown-menu a:hover {
+            background: var(--azul-claro);
+            color: var(--azul-principal);
+        }
+        
+        /* Desplegable con dos columnas para municipios */
+        .dropdown-menu.two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-width: 400px;
+        }
+        
+        /* Botones de contacto en el header */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            color: var(--azul-principal);
+            font-size: 1.125rem;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--sombra-media);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            box-shadow: var(--sombra-media);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        /* Menú móvil hamburguesa */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+        
+        .mobile-menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--azul-principal);
+            transition: all 0.3s ease;
+        }
+        
+        /* ============================================
+           SECCIÓN HERO CON PARALLAX
+           Sección principal con imagen de fondo y efecto parallax
+           ============================================ */
+        .hero {
+            /* Imagen de fondo - Reemplaza 'img1.jpg' con tu imagen real */
+            /* Tamaño recomendado: 1920x1080px o superior */
+            background-image: url('https://images.unsplash.com/photo-1632778149955-e80f8ceca2e7?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Efecto parallax */
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 80px; /* Espacio para el header fijo */
+        }
+        
+        /* Overlay oscuro sobre la imagen para mejorar legibilidad */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(13, 43, 82, 0.85), 
+                rgba(27, 75, 138, 0.75)
+            );
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 800px;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: var(--espacio-md);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            margin-bottom: var(--espacio-md);
+            line-height: 1.8;
+        }
+        
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: var(--espacio-lg);
+        }
+        
+        .btn-hero {
+            padding: 1.25rem 3rem;
+            font-size: 1.125rem;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        
+        .btn-hero-primary {
+            background: white;
+            color: var(--azul-principal);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        .btn-hero-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        
+        .btn-hero-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .btn-hero-secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            border-color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Badges de confianza en el hero */
+        .trust-badges {
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .badge-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.75rem;
+        }
+        
+        .badge-text {
+            text-align: left;
+        }
+        
+        .badge-text strong {
+            display: block;
+            font-size: 1.125rem;
+        }
+        
+        .badge-text span {
+            font-size: 0.875rem;
+            opacity: 0.9;
+        }
+        
+        /* ============================================
+           SECCIÓN DE SERVICIOS
+           Grid de tarjetas con los servicios principales
+           ============================================ */
+        .servicios {
+            padding: var(--espacio-xl) 0;
+            background: var(--blanco);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--espacio-lg);
+        }
+        
+        .section-header h2 {
+            color: var(--azul-principal);
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--gris-medio);
+        }
+        
+        .servicios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: var(--espacio-lg);
+        }
+        
+        .servicio-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: var(--sombra-suave);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--azul-principal);
+        }
+        
+        .servicio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--sombra-fuerte);
+        }
+        
+        .servicio-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
+            color: white;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .servicio-card h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+        
+        .servicio-card p {
+            color: var(--gris-medio);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .servicio-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .servicio-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--gris-oscuro);
+        }
+        
+        .servicio-features li::before {
+            content: '✓';
+            color: var(--naranja-acento);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .btn-servicio {
+            width: 100%;
+            text-align: center;
+            padding: 0.875rem;
+            background: var(--azul-principal);
+            color: white;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-servicio:hover {
+            background: var(--azul-oscuro);
+            transform: translateX(5px);
+        }
+        
+        /* ============================================
+           SECCIÓN DE URGENCIAS
+           Banner destacado con CTA de emergencias
+           ============================================ */
+        .urgencias {
+            /* Imagen de fondo - Reemplaza 'img2.jpg' con tu imagen */
+            /* Tamaño recomendado: 1920x600px */
+            background-image: url('https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Parallax */
+            padding: var(--espacio-xl) 0;
+            position: relative;
+        }
+        
+        .urgencias::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(230, 126, 34, 0.9), 
+                rgba(211, 84, 0, 0.85)
+            );
+        }
+        
+        .urgencias-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        
+        .urgencias h2 {
+            color: white;
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        .urgencias-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: var(--espacio-lg);
+        }
+        
+        .urgencias-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: var(--espacio-lg);
+        }
+        
+        .urgencia-feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .urgencia-feature h3 {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .urgencia-feature p {
+            font-size: 1.125rem;
+            margin: 0;
+        }
+        
+        /* Botón con efecto de pulsación */
+        .pulse-button {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .pulse-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: 50px;
+            transform: translate(-50%, -50%);
+            animation: pulse 2s infinite;
+            opacity: 0.3;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.15);
+                opacity: 0;
+            }
+        }
+        
+        /* ============================================
+           SECCIÓN POR QUÉ ELEGIRNOS
+           Ventajas competitivas de la empresa
+           ============================================ */
+        .por-que-elegirnos {
+            padding: var(--espacio-xl) 0;
+            background: var(--azul-claro);
+        }
+        
+        .ventajas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: var(--espacio-lg);
+        }
+        
+        .ventaja {
+            text-align: center;
+        }
+        
+        .ventaja-numero {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--naranja-acento);
+            margin-bottom: 1rem;
+            font-family: var(--fuente-titulos);
+        }
+        
+        .ventaja h3 {
+            color: var(--azul-oscuro);
+            margin-bottom: 1rem;
+        }
+        
+        .ventaja p {
+            color: var(--gris-medio);
+            line-height: 1.7;
+        }
+        
+        /* ============================================
+           SECCIÓN DE COBERTURA GEOGRÁFICA
+           Mapa de municipios donde opera la empresa
+           ============================================ */
+        .cobertura {
+            padding: var(--espacio-xl) 0;
+            background: white;
+        }
+        
+        .municipios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: var(--espacio-lg);
+        }
+        
+        .municipio {
+            background: var(--gris-claro);
+            padding: 1.25rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--gris-oscuro);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .municipio:hover {
+            background: var(--azul-principal);
+            color: white;
+            border-color: var(--azul-oscuro);
+            transform: translateY(-3px);
+            box-shadow: var(--sombra-media);
+        }
+        
+        .municipio.destacado {
+            background: var(--azul-principal);
+            color: white;
+            font-weight: 700;
+            font-size: 1.125rem;
+        }
+        
+        /* ============================================
+           SECCIÓN DE TESTIMONIOS
+           Reseñas de clientes con integración Google
+           ============================================ */
+        .testimonios {
+            padding: var(--espacio-xl) 0;
+            background: var(--azul-claro);
+        }
+        
+        .testimonios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: var(--espacio-lg);
+        }
+        
+        .testimonio {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: var(--sombra-media);
+            position: relative;
+        }
+        
+        .testimonio::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-size: 5rem;
+            color: var(--azul-principal);
+            opacity: 0.1;
+            font-family: Georgia, serif;
+        }
+        
+        .stars {
+            color: #F39C12;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonio-text {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--gris-oscuro);
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .testimonio-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--azul-principal), var(--azul-oscuro));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .author-info h4 {
+            font-size: 1.05rem;
+            color: var(--azul-oscuro);
+            margin-bottom: 0.25rem;
+        }
+        
+        .author-info p {
+            font-size: 0.9rem;
+            color: var(--gris-medio);
+            margin: 0;
+        }
+        
+        /* ============================================
+           SECCIÓN CTA FINAL
+           Llamada a la acción antes del mapa
+           ============================================ */
+        .cta-final {
+            padding: var(--espacio-xl) 0;
+            background: white;
+            text-align: center;
+        }
+        
+        .cta-final h2 {
+            color: var(--azul-principal);
+            margin-bottom: var(--espacio-sm);
+        }
+        
+        .cta-final p {
+            font-size: 1.25rem;
+            color: var(--gris-medio);
+            max-width: 700px;
+            margin: 0 auto var(--espacio-lg);
+        }
+        
+        /* ============================================
+           MAPA DE GOOGLE MAPS
+           Ubicación de la empresa en el mapa
+           ============================================ */
+        .mapa-section {
+            height: 500px;
+            position: relative;
+        }
+        
+        .mapa-section iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(20%); /* Efecto visual sutil */
+        }
+        
+        /* ============================================
+           FOOTER
+           Pie de página con enlaces, contacto y SEO
+           ============================================ */
+        .footer {
+            background: var(--azul-oscuro);
+            color: white;
+            padding: var(--espacio-lg) 0 var(--espacio-md);
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: var(--espacio-lg);
+        }
+        
+        .footer-section h3 {
+            color: var(--naranja-acento);
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .footer-section p,
+        .footer-section li {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: var(--naranja-acento);
+        }
+        
+        .footer-logo img {
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: var(--naranja-acento);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--espacio-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* ============================================
+           BOTÓN FLOTANTE DE WHATSAPP
+           Botón fijo en la esquina inferior derecha
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 999;
+            animation: floatBounce 3s ease-in-out infinite;
+        }
+        
+        @keyframes floatBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .whatsapp-btn {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.7);
+        }
+        
+        /* Efecto de ondas en el botón de WhatsApp */
+        .whatsapp-btn::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #25D366;
+            border-radius: 50%;
+            animation: ripple 1.5s infinite;
+        }
+        
+        @keyframes ripple {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+        
+        /* ============================================
+           RESPONSIVE - DISEÑO MÓVIL
+           Ajustes para pantallas pequeñas
+           ============================================ */
+        @media (max-width: 768px) {
+            /* Header móvil */
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                box-shadow: var(--sombra-fuerte);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .header-actions {
+                gap: 0.5rem;
+            }
+            
+            .btn-phone {
+                display: none; /* Ocultar teléfono en móvil para ahorrar espacio */
+            }
+            
+            /* Menú desplegable en móvil */
+            .dropdown-menu {
+                position: static;
+                box-shadow: none;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                display: none;
+                margin-top: 0.5rem;
+            }
+            
+            .dropdown.active .dropdown-menu {
+                display: block;
+            }
+            
+            .dropdown-menu.two-columns {
+                grid-template-columns: 1fr;
+                min-width: auto;
+            }
+            
+            /* Hero móvil */
+            .hero {
+                background-attachment: scroll; /* Desactivar parallax en móvil por rendimiento */
+                min-height: 80vh;
+                padding: var(--espacio-lg) 0;
+            }
+            
+            .hero-ctas {
+                flex-direction: column;
+            }
+            
+            .btn-hero {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .trust-badges {
+                justify-content: center;
+            }
+            
+            /* Grids a una columna */
+            .servicios-grid,
+            .testimonios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .municipios-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+            
+            /* Botón WhatsApp más pequeño en móvil */
+            .whatsapp-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .whatsapp-btn {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+            }
+            
+            /* Mapa más pequeño en móvil */
+            .mapa-section {
+                height: 350px;
+            }
+        }
+        
+        /* Tablets */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .servicios-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonios-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ============================================
+         HEADER - BARRA DE NAVEGACIÓN SUPERIOR
+         Modifica el logo, menús y botones aquí
+         ============================================ -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo - Reemplaza 'logo-cd.jpg' con tu logo real -->
+                <!-- Tamaño recomendado logo: 200x80px (fondo transparente PNG) -->
+                <a href="#inicio" class="logo">
+                    <!-- <img src="img/cd2.png" alt="Logo Cubiertas David"> -->
+                    <div class="logo-text">
+                        <h1>CUBIERTAS DAVID</h1>
+                        <span>Expertos desde 1998</span>
+                    </div>
+                </a>
+                
+                <!-- Navegación principal -->
+                <nav class="nav">
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#inicio">Inicio</a></li>
+                        
+                        <!-- Menú desplegable de Servicios -->
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">Servicios</span>
+                            <div class="dropdown-menu">
+                                <a href="#servicios">Reforma Integral de Tejados</a>
+                                <a href="#servicios">Reparación de Tejados</a>
+                                <a href="#servicios">Impermeabilización</a>
+                                <a href="#servicios">Canalones y Bajantes</a>
+                                <a href="#servicios">Panel Sándwich</a>
+                                <a href="#servicios">Tejados de Pizarra</a>
+                                <a href="#servicios">Aislamiento Térmico</a>
+                                <a href="#servicios">Urgencias 24/7</a>
+                            </div>
+                        </li>
+                        
+                        <!-- Menú desplegable de Municipios -->
+                        <li class="dropdown">
+                            <span class="dropdown-toggle">Municipios</span>
+                            <div class="dropdown-menu two-columns">
+                                <!-- Columna 1 -->
+                                <a href="#cobertura">Oviedo</a>
+                                <a href="#cobertura">Gijón</a>
+                                <a href="#cobertura">Avilés</a>
+                                <a href="#cobertura">Siero</a>
+                                <a href="#cobertura">Langreo</a>
+                                <a href="#cobertura">Mieres</a>
+                                <!-- Columna 2 -->
+                                <a href="#cobertura">Castrillón</a>
+                                <a href="#cobertura">Llanera</a>
+                                <a href="#cobertura">Corvera</a>
+                                <a href="#cobertura">Villaviciosa</a>
+                                <a href="#cobertura">Llanes</a>
+                                <a href="#cobertura">Toda Asturias ➜</a>
+                            </div>
+                        </li>
+                        
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    
+                    <!-- Botones de acción en el header -->
+                    <div class="header-actions">
+                        <a href="tel:+34693743627" class="btn-phone">
+                            📞 693 743 627
+                        </a>
+                        <a href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" class="btn-whatsapp">
+                            💬 WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Botón hamburguesa para móvil -->
+                    <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- ============================================
+         HERO - SECCIÓN PRINCIPAL CON PARALLAX
+         Cambia la imagen de fondo en el CSS (línea ~400)
+         ============================================ -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tu Tejadista de Confianza en Asturias</h1>
+                <p class="hero-subtitle">
+                    Más de 25 años protegiendo hogares asturianos. Servicio profesional sin intermediarios, 
+                    con garantía por escrito. Respondemos en menos de 2 horas. 100% empresa asturiana.
+                </p>
+                
+                <!-- Botones de llamada a la acción -->
+                <div class="hero-ctas">
+                    <a href="tel:+34693743627" class="btn-hero btn-hero-primary">
+                        📞 Llamar 693 743 627
+                    </a>
+                    <a href="#servicios" class="btn-hero btn-hero-secondary">
+                        Ver Servicios
+                    </a>
+                </div>
+                
+                <!-- Badges de confianza -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <div class="badge-icon">⏱</div>
+                        <div class="badge-text">
+                            <strong>Respuesta</strong>
+                            <span>en menos de 2 horas</span>
+                        </div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">⭐</div>
+                        <div class="badge-text">
+                            <strong>4.9/5 Estrellas</strong>
+                            <span>47 reseñas Google</span>
+                        </div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">🛠</div>
+                        <div class="badge-text">
+                            <strong>+25 Años</strong>
+                            <span>de experiencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         SERVICIOS - CATÁLOGO DE SERVICIOS
+         Añade o quita servicios modificando los divs .servicio-card
+         ============================================ -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p class="section-subtitle">
+                    Soluciones completas para todo tipo de tejados y cubiertas en toda Asturias
+                </p>
+            </div>
+            
+            <div class="servicios-grid">
+                <!-- Servicio 1 - Copia este bloque para añadir más servicios -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🏠</div>
+                    <h3>Reforma Integral de Tejados</h3>
+                    <p>Rehabilitación completa de cubiertas con las mejores técnicas y materiales del mercado.</p>
+                    <ul class="servicio-features">
+                        <li>Diagnóstico profesional</li>
+                        <li>Cambio de estructura</li>
+                        <li>Impermeabilización total</li>
+                        <li>Garantía 10 años</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🔨</div>
+                    <h3>Reparación de Tejados</h3>
+                    <p>Solución rápida y definitiva para goteras, tejas rotas y filtraciones.</p>
+                    <ul class="servicio-features">
+                        <li>Detección de goteras</li>
+                        <li>Sustitución de tejas</li>
+                        <li>Sellado de grietas</li>
+                        <li>Trabajo garantizado</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">💧</div>
+                    <h3>Impermeabilización</h3>
+                    <p>Protección total contra humedades con sistemas de última generación.</p>
+                    <ul class="servicio-features">
+                        <li>Membranas EPDM/TPO</li>
+                        <li>Poliuretano proyectado</li>
+                        <li>Tela asfáltica</li>
+                        <li>Cubiertas y terrazas</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">🌊</div>
+                    <h3>Canalones y Bajantes</h3>
+                    <p>Instalación, reparación y limpieza de sistemas de evacuación.</p>
+                    <ul class="servicio-features">
+                        <li>Aluminio continuo</li>
+                        <li>Zinc y cobre</li>
+                        <li>Limpieza y desatascos</li>
+                        <li>Sistemas anti-aves</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">📐</div>
+                    <h3>Panel Sándwich</h3>
+                    <p>Instalación de cubiertas con aislamiento térmico y acústico superior.</p>
+                    <ul class="servicio-features">
+                        <li>Máximo aislamiento</li>
+                        <li>Instalación rápida</li>
+                        <li>Naves industriales</li>
+                        <li>Varios grosores</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Pedir Presupuesto ➜</a>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="servicio-card">
+                    <div class="servicio-icon">⚡</div>
+                    <h3>Urgencias 24/7</h3>
+                    <p>Servicio de emergencias disponible todos los días del año.</p>
+                    <ul class="servicio-features">
+                        <li>Respuesta inmediata</li>
+                        <li>Disponibilidad 24h</li>
+                        <li>Fines de semana</li>
+                        <li>Reparaciones temporales</li>
+                    </ul>
+                    <a href="tel:+34693743627" class="btn-servicio">Llamada Urgente ➜</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         URGENCIAS - BANNER CON PARALLAX
+         Cambia la imagen de fondo en el CSS (línea ~780)
+         ============================================ -->
+    <section class="urgencias">
+        <div class="container">
+            <div class="urgencias-content">
+                <h2>¿GOTERAS? ¿FILTRACIONES DE URGENCIA?</h2>
+                <p class="urgencias-subtitle">Atendemos emergencias en menos de 2 horas</p>
+                
+                <div class="urgencias-features">
+                    <div class="urgencia-feature">
+                        <h3>⏱ 2 HORAS</h3>
+                        <p>Tiempo medio de respuesta</p>
+                    </div>
+                    <div class="urgencia-feature">
+                        <h3>24/7</h3>
+                        <p>Disponibles todos los días</p>
+                    </div>
+                    <div class="urgencia-feature">
+                        <h3>100%</h3>
+                        <p>Satisfacción garantizada</p>
+                    </div>
+                </div>
+                
+                <div class="pulse-button">
+                    <a href="tel:+34693743627" class="btn-hero btn-hero-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+                        🚨 LLAMAR URGENCIAS: 693 743 627
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         POR QUÉ ELEGIRNOS - VENTAJAS COMPETITIVAS
+         Modifica los números y textos según tus datos reales
+         ============================================ -->
+    <section class="por-que-elegirnos">
+        <div class="container">
+            <div class="section-header">
+                <h2>¿Por Qué Elegir Cubiertas David?</h2>
+                <p class="section-subtitle">
+                    Compromiso, experiencia y resultados que hablan por sí mismos
+                </p>
+            </div>
+            
+            <div class="ventajas-grid">
+                <div class="ventaja">
+                    <div class="ventaja-numero">25+</div>
+                    <h3>AÑOS DE EXPERIENCIA</h3>
+                    <p>Más de dos décadas protegiendo hogares asturianos contra las inclemencias del tiempo.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">47</div>
+                    <h3>CLIENTES SATISFECHOS</h3>
+                    <p>Familias que confían en nosotros y nos recomiendan a sus vecinos y conocidos.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">2h</div>
+                    <h3>TIEMPO DE RESPUESTA</h3>
+                    <p>Respondemos en menos de 2 horas. WhatsApp directo con el jefe de obra.</p>
+                </div>
+                
+                <div class="ventaja">
+                    <div class="ventaja-numero">10</div>
+                    <h3>AÑOS DE GARANTÍA</h3>
+                    <p>Garantía por escrito en reformas integrales. Tranquilidad total para tu hogar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         COBERTURA GEOGRÁFICA - MUNICIPIOS
+         Añade o quita municipios según tu área de servicio
+         ============================================ -->
+    <section class="cobertura" id="cobertura">
+        <div class="container">
+            <div class="section-header">
+                <h2>Servicio en Toda Asturias</h2>
+                <p class="section-subtitle">
+                    Trabajamos en todos los municipios de la región con el mismo compromiso de calidad
+                </p>
+            </div>
+            
+            <div class="municipios-grid">
+                <!-- Municipios destacados - La clase 'destacado' los resalta visualmente -->
+                <div class="municipio destacado">Oviedo</div>
+                <div class="municipio destacado">Gijón</div>
+                <div class="municipio destacado">Avilés</div>
+                
+                <!-- Resto de municipios - Ordena alfabéticamente o por importancia -->
+                <div class="municipio">Siero</div>
+                <div class="municipio">Langreo</div>
+                <div class="municipio">Mieres</div>
+                <div class="municipio">Castrillón</div>
+                <div class="municipio">Llanera</div>
+                <div class="municipio">Corvera</div>
+                <div class="municipio">Carreño</div>
+                <div class="municipio">Gozón</div>
+                <div class="municipio">Noreña</div>
+                <div class="municipio">Las Regueras</div>
+                <div class="municipio">Aller</div>
+                <div class="municipio">Laviana</div>
+                <div class="municipio">San Martín del Rey Aurelio</div>
+                <div class="municipio">Lena</div>
+                <div class="municipio">Nava</div>
+                <div class="municipio">Bimenes</div>
+                <div class="municipio">Piloña</div>
+                <div class="municipio">Villaviciosa</div>
+                <div class="municipio">Colunga</div>
+                <div class="municipio">Ribadesella</div>
+                <div class="municipio">Cangas de Onís</div>
+                <div class="municipio">Llanes</div>
+                <div class="municipio">Parres</div>
+                <div class="municipio">Cabrales</div>
+                <div class="municipio">Valdés</div>
+                <div class="municipio">Navia</div>
+                <div class="municipio">Tineo</div>
+                <div class="municipio">Salas</div>
+                <div class="municipio">Pravia</div>
+                <div class="municipio">Cudillero</div>
+                <div class="municipio">Muros de Nalón</div>
+                <div class="municipio">Soto del Barco</div>
+                <div class="municipio">Grado</div>
+                <div class="municipio">Cangas del Narcea</div>
+                <div class="municipio">+ Todos los concejos</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         TESTIMONIOS - RESEÑAS DE CLIENTES
+         Reemplaza con tus testimonios reales de Google
+         ============================================ -->
+    <section class="testimonios" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p class="section-subtitle">
+                    Más de 47 familias asturianas confían en nuestro trabajo
+                </p>
+            </div>
+            
+            <div class="testimonios-grid">
+                <!-- Testimonio 1 - Copia este bloque para añadir más -->
+                <div class="testimonio">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-text">
+                        "David y su equipo arreglaron las goteras de mi casa en tiempo récord. 
+                        Profesionales, rápidos y el precio muy ajustado. Totalmente recomendables."
+                    </p>
+                    <div class="testimonio-author">
+                        <div class="author-avatar">MG</div>
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Oviedo - Hace 2 meses</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="testimonio">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-text">
+                        "Reformaron todo el tejado de mi casa en Gijón. Trabajo impecable, 
+                        dejaron todo limpio y terminaron antes del plazo. Muy contentos."
+                    </p>
+                    <div class="testimonio-author">
+                        <div class="author-avatar">JL</div>
+                        <div class="author-info">
+                            <h4>José Luis Fernández</h4>
+                            <p>Gijón - Hace 1 mes</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="testimonio">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonio-text">
+                        "Excelente servicio. Repararon las goteras del bajo cubierta y me 
+                        aconsejaron sobre el mantenimiento. Gente seria y trabajadora."
+                    </p>
+                    <div class="testimonio-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Ana María Suárez</h4>
+                            <p>Avilés - Hace 3 semanas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         CTA FINAL - LLAMADA A LA ACCIÓN
+         Última oportunidad de conversión antes del mapa
+         ============================================ -->
+    <section class="cta-final" id="contacto">
+        <div class="container">
+            <h2>¿Listo Para Proteger Tu Hogar?</h2>
+            <p>
+                Llama ahora y recibe un presupuesto gratuito sin compromiso. 
+                Atendemos tu llamada de inmediato o responde en menos de 2 horas.
+            </p>
+            <a href="tel:+34693743627" class="btn-hero btn-hero-primary" style="font-size: 1.5rem; padding: 1.5rem 3.5rem;">
+                📞 693 743 627 - LLAMAR AHORA
+            </a>
+        </div>
+    </section>
+    
+    <!-- ============================================
+         MAPA DE GOOGLE MAPS
+         Ubicación en Calle Foncalada, Oviedo
+         Para personalizar: Busca tu dirección en Google Maps
+         ============================================ -->
+    <section class="mapa-section">
+        <!-- 
+            CÓMO PERSONALIZAR ESTE MAPA:
+            1. Ve a Google Maps (maps.google.com)
+            2. Busca tu dirección exacta
+            3. Clic en "Compartir" > "Insertar un mapa"
+            4. Copia el código <iframe> y reemplázalo aquí
+            
+            Actualmente muestra: Calle Foncalada, Oviedo
+        -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2899.756824!2d-5.8467!3d43.3614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368cdf0e8bc9ab%3A0x9c4b8f0a8f0a8f0a!2sCalle%20Foncalada%2C%20Oviedo%2C%20Asturias!5e0!3m2!1ses!2ses!4v1234567890"
+            width="100%" 
+            height="500" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+    
+    <!-- ============================================
+         FOOTER - PIE DE PÁGINA CON SEO
+         Información de contacto, enlaces y legal
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Sección 1: Sobre la empresa -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <!-- Logo en el footer - Puede ser diferente al del header -->
+                        <img src="https://via.placeholder.com/200x80/FFFFFF/1B4B8A?text=CD" alt="Logo Cubiertas David">
+                    </div>
+                    <p>
+                        Especialistas en reparación e instalación de tejados con más de 25 años de 
+                        experiencia en toda Asturias. 100% empresa local asturiana.
+                    </p>
+                    <p>
+                        <strong>Horario de Atención:</strong><br>
+                        Lunes a Viernes: 8:00 - 20:00<br>
+                        Sábados: 9:00 - 14:00<br>
+                        <strong>Urgencias 24/7 disponibles</strong>
+                    </p>
+                    
+                    <!-- Redes sociales - Añade tus enlaces reales -->
+                    <div class="footer-social">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📷</a>
+                        <a href="https://wa.me/34693743627" class="social-icon" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                
+                <!-- Sección 2: Servicios -->
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Reforma de Tejados</a></li>
+                        <li><a href="#servicios">Reparación de Goteras</a></li>
+                        <li><a href="#servicios">Impermeabilización</a></li>
+                        <li><a href="#servicios">Canalones y Bajantes</a></li>
+                        <li><a href="#servicios">Panel Sándwich</a></li>
+                        <li><a href="#servicios">Tejados de Pizarra</a></li>
+                        <li><a href="#servicios">Aislamiento Térmico</a></li>
+                        <li><a href="#servicios">Urgencias 24/7</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Sección 3: Zonas de servicio -->
+                <div class="footer-section">
+                    <h3>Zonas de Servicio</h3>
+                    <ul>
+                        <li><a href="#cobertura">Tejados Oviedo</a></li>
+                        <li><a href="#cobertura">Tejados Gijón</a></li>
+                        <li><a href="#cobertura">Tejados Avilés</a></li>
+                        <li><a href="#cobertura">Tejados Siero</a></li>
+                        <li><a href="#cobertura">Tejados Langreo</a></li>
+                        <li><a href="#cobertura">Tejados Mieres</a></li>
+                        <li><a href="#cobertura">Toda Asturias</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Sección 4: Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>
+                        <strong>Teléfono:</strong><br>
+                        📞 <a href="tel:+34693743627">693 743 627</a>
+                    </p>
+                    <p>
+                        <strong>WhatsApp:</strong><br>
+                        💬 <a href="https://wa.me/34693743627">693 743 627</a>
+                    </p>
+                    <p>
+                        <strong>Email:</strong><br>
+                        ✉️ <a href="mailto:info@cubiertasdavid.com">info@cubiertasdavid.com</a>
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        <strong>Presupuestos gratuitos</strong><br>
+                        Sin compromiso<br>
+                        Respuesta en menos de 2 horas
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Copyright y legal -->
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 Cubiertas David. Todos los derechos reservados. | 
+                    <a href="#">Aviso Legal</a> | 
+                    <a href="#">Política de Privacidad</a> | 
+                    <a href="#">Política de Cookies</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ============================================
+         BOTÓN FLOTANTE DE WHATSAPP
+         Siempre visible en la esquina inferior derecha
+         ============================================ -->
+    <div class="whatsapp-float">
+        <a 
+            href="https://wa.me/34693743627?text=Hola,%20necesito%20información%20sobre%20reparación%20de%20tejados" 
+            class="whatsapp-btn"
+            aria-label="Contactar por WhatsApp"
+            target="_blank"
+        >
+            💬
+        </a>
+    </div>
+    
+    <!-- ============================================
+         JAVASCRIPT - Interactividad de la página
+         ============================================ -->
+    <script>
+        /* 
+         * Efecto de cambio en el header al hacer scroll
+         * Añade clase 'scrolled' cuando bajas más de 100px
+         */
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        /*
+         * Menú móvil hamburguesa
+         * Abre/cierra el menú al hacer clic
+         */
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                
+                // Anima el icono hamburguesa
+                const spans = this.querySelectorAll('span');
+                spans[0].style.transform = navLinks.classList.contains('active') 
+                    ? 'rotate(45deg) translateY(8px)' : 'none';
+                spans[1].style.opacity = navLinks.classList.contains('active') ? '0' : '1';
+                spans[2].style.transform = navLinks.classList.contains('active') 
+                    ? 'rotate(-45deg) translateY(-8px)' : 'none';
+            });
+        }
+        
+        /*
+         * Menús desplegables en móvil
+         * Permite expandir/contraer los submenús
+         */
+        document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+            toggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const dropdown = this.parentElement;
+                    dropdown.classList.toggle('active');
+                }
+            });
+        });
+        
+        /*
+         * Cerrar menú móvil al hacer clic en un enlace
+         * Mejora la experiencia de usuario
+         */
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    navLinks.classList.remove('active');
+                    
+                    // Restaura el icono hamburguesa
+                    const spans = mobileMenuToggle.querySelectorAll('span');
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                }
+            });
+        });
+        
+        /*
+         * Scroll suave con offset para el header fijo
+         * Compensa la altura del header al hacer scroll a secciones
+         */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = document.getElementById('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
                         behavior: 'smooth'
                     });
                 }
