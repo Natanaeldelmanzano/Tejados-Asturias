@@ -1,0 +1,389 @@
+<!-- ═══════════════════════════════════════════════════════════════════
+     SECCIÓN HUB DE SERVICIOS DE CONVERSIÓN
+     Grid interactivo con tarjetas por ciudad y tipo de servicio
+     ═══════════════════════════════════════════════════════════════════ -->
+
+<section class="servicios-conversion-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Nuestros Servicios en Asturias</h2>
+            <p>Soluciones especializadas en tejados y cubiertas en las principales ciudades</p>
+        </div>
+
+        <!-- Selector de Ciudad -->
+        <div class="ciudades-selector">
+            <button class="ciudad-btn active" data-ciudad="oviedo">Oviedo</button>
+            <button class="ciudad-btn" data-ciudad="gijon">Gijón</button>
+            <button class="ciudad-btn" data-ciudad="aviles">Avilés</button>
+            <button class="ciudad-btn" data-ciudad="siero">Siero</button>
+            <button class="ciudad-btn" data-ciudad="langreo">Langreo</button>
+            <button class="ciudad-btn" data-ciudad="mieres">Mieres</button>
+            <button class="ciudad-btn" data-ciudad="castrillon">Castrillón</button>
+            <button class="ciudad-btn" data-ciudad="llanera">Llanera</button>
+            <button class="ciudad-btn" data-ciudad="corvera">Corvera</button>
+        </div>
+
+        <!-- Grid de Tarjetas de Servicios -->
+        <div class="servicios-grid" id="servicios-grid">
+            <!-- Las tarjetas se generan dinámicamente con JavaScript -->
+        </div>
+
+        <!-- Sección de Mapa -->
+        <div class="mapa-section">
+            <h3>Ubicación</h3>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.5559843212653!2d-5.849309!3d43.361400!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd368f6f6f6f6f6f%3A0x0!2sCubiertas%20David!5e0!3m2!1ses!2ses!4v1234567890" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Datos de servicios: Tipo de servicio → información
+const serviciosData = {
+    goteras: {
+        nombre: 'Reparación de Goteras',
+        icon: '💧',
+        descripcion: 'Arreglo urgente de filtraciones de agua',
+        cta: 'Ver más'
+    },
+    presupuesto: {
+        nombre: 'Solicitar Presupuesto',
+        icon: '📋',
+        descripcion: 'Presupuesto gratis sin compromiso',
+        cta: 'Solicitar'
+    },
+    urgencias: {
+        nombre: 'Urgencias 24/7',
+        icon: '⚠️',
+        descripcion: 'Servicio de emergencia disponible siempre',
+        cta: 'Emergencia'
+    },
+    trabajos: {
+        nombre: 'Trabajos Realizados',
+        icon: '✓',
+        descripcion: 'Véase nuestro portfolio y referencias',
+        cta: 'Ver obras'
+    },
+    precios: {
+        nombre: 'Tabla de Precios',
+        icon: '💰',
+        descripcion: 'Transparencia en tarifas y costos',
+        cta: 'Ver precios'
+    }
+};
+
+// Orden de servicios para mostrar
+const ordenServicios = ['goteras', 'presupuesto', 'urgencias', 'trabajos', 'precios'];
+
+// Imágenes disponibles (cicladas)
+const imagenesDisponibles = [
+    '/img/1.jpg',
+    '/img/2.jpg',
+    '/img/3.jpg',
+    '/img/4.jpg',
+    '/img/5.jpg',
+    '/img/6.jpg'
+];
+
+// Mapeo de slugs de ciudades
+const ciudadSlugs = {
+    'oviedo': 'oviedo',
+    'gijon': 'gijon',
+    'aviles': 'aviles',
+    'siero': 'siero',
+    'langreo': 'langreo',
+    'mieres': 'mieres',
+    'castrillon': 'castrillon',
+    'llanera': 'llanera',
+    'corvera': 'corvera'
+};
+
+// Mapeo de tipos de servicio → slug de página
+const paginasMap = {
+    goteras: 'reparacion-goteras',
+    presupuesto: 'presupuesto-tejados',
+    urgencias: 'urgencias-tejados',
+    trabajos: 'trabajos-realizados',
+    precios: 'precios-reforma-tejado'
+};
+
+// Función para generar tarjetas de una ciudad
+function generarTarjetas(ciudad) {
+    const grid = document.getElementById('servicios-grid');
+    grid.innerHTML = '';
+    
+    const ciudadSlug = ciudadSlugs[ciudad.toLowerCase()];
+    
+    ordenServicios.forEach((tipo, index) => {
+        const servicio = serviciosData[tipo];
+        const imagen = imagenesDisponibles[index % imagenesDisponibles.length];
+        const paginaSlug = paginasMap[tipo];
+        const url = `/${paginaSlug}-${ciudadSlug}.html`;
+        
+        const tarjeta = document.createElement('div');
+        tarjeta.className = 'servicio-card';
+        tarjeta.innerHTML = `
+            <a href="${url}" class="card-link">
+                <div class="card-imagen">
+                    <img src="${imagen}" alt="${servicio.nombre} en ${ciudad}" loading="lazy">
+                    <div class="card-overlay">
+                        <span class="card-icon">${servicio.icon}</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>${servicio.nombre}</h3>
+                    <p>${servicio.descripcion}</p>
+                    <div class="card-cta">${servicio.cta} →</div>
+                </div>
+            </a>
+        `;
+        
+        grid.appendChild(tarjeta);
+    });
+}
+
+// Event listeners para los botones de ciudad
+document.addEventListener('DOMContentLoaded', function() {
+    const botonesCiudad = document.querySelectorAll('.ciudad-btn');
+    
+    botonesCiudad.forEach(boton => {
+        boton.addEventListener('click', function() {
+            // Remove active class from all buttons
+            botonesCiudad.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            // Generate tarjetas for selected ciudad
+            generarTarjetas(this.dataset.ciudad);
+        });
+    });
+    
+    // Generar tarjetas iniciales (Oviedo)
+    generarTarjetas('oviedo');
+});
+</script>
+
+<style>
+.servicios-conversion-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+}
+
+.servicios-conversion-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.servicios-conversion-section .section-header h2 {
+    font-size: 2.5rem;
+    color: #1B4B8A;
+    margin-bottom: 10px;
+}
+
+.servicios-conversion-section .section-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Selector de Ciudades */
+.ciudades-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-direction: row;
+}
+
+.ciudad-btn {
+    padding: 12px 24px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1B4B8A;
+    transition: all 0.3s ease;
+}
+
+.ciudad-btn:hover {
+    border-color: #1B4B8A;
+    background: #f0f4f8;
+}
+
+.ciudad-btn.active {
+    background: #1B4B8A;
+    color: white;
+    border-color: #1B4B8A;
+    box-shadow: 0 4px 12px rgba(27, 75, 138, 0.3);
+}
+
+/* Grid de Tarjetas */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.servicio-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(27, 75, 138, 0.15);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.card-imagen {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.card-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.servicio-card:hover .card-imagen img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(27, 75, 138, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.servicio-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: white;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 1.2rem;
+    color: #1B4B8A;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.card-cta {
+    color: #FF6B35;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Sección de Mapa */
+.mapa-section {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #e0e0e0;
+}
+
+.mapa-section h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #1B4B8A;
+    margin-bottom: 30px;
+}
+
+.mapa-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-container iframe {
+    border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ciudades-selector {
+        justify-content: space-around;
+        gap: 5px;
+    }
+    
+    .ciudad-btn {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
+    
+    .servicios-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .servicios-conversion-section .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .card-content {
+        padding: 15px;
+    }
+    
+    .card-content h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ciudades-selector {
+        flex-wrap: wrap;
+    }
+    
+    .ciudad-btn {
+        flex: 0 0 48%;
+    }
+    
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mapa-container {
+        height: 300px !important;
+    }
+}
+</style>

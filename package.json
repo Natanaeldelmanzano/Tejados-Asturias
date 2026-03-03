@@ -1,0 +1,37 @@
+{
+  "name": "cubiertasdavid-generator",
+  "version": "2.0.0",
+  "description": "Generador automático de 75 páginas SEO para CubiertasDavid.com (Reparación de tejados Asturias)",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js && echo. && node generate-conversion.js && echo. && node generate-sitemap.js && echo. && node insert-links.js && echo. && echo ✅ Todas las 75 páginas generadas y 68 enlaces insertados",
+    "generate:data": "node generate-conversion-data.js",
+    "clean": "node clean.js",
+    "serve": "python -m http.server 8000 --directory dist",
+    "dev": "node generate.js && node generate-conversion.js && node insert-links.js && echo. && echo ✅ Páginas generadas. Abre http://localhost:8000 en tu navegador",
+    "build": "node clean.js && npm run generate",
+    "build:prod": "npm run build && npm run generate:sitemap"
+  },
+  "keywords": [
+    "static-site",
+    "generator",
+    "cubiertas",
+    "tejados",
+    "reparación",
+    "impermeabilización",
+    "asturias",
+    "seo",
+    "schema.org"
+  ],
+  "author": "Natanael - VIDISCO",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cubiertasdavid.git"
+  }
+}

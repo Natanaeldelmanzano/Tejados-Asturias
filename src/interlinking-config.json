@@ -1,0 +1,261 @@
+{
+  "version": "1.0.0",
+  "descripcion": "Configuración de interlinking estratégico para CubiertasDavid.com",
+
+  "rules": {
+    "min_links_per_page": 5,
+    "max_links_per_page": 8,
+    "max_links_per_paragraph": 2,
+    "no_link_mismo_destino": true,
+    "vary_anchor_texts": true,
+    "link_class": "internal-link",
+    "link_rel": "noopener"
+  },
+
+  "tipos_pagina": {
+    "zona":        ["tejados-oviedo", "tejados-gijon", "tejados-aviles", "tejados-siero", "tejados-langreo", "tejados-mieres", "tejados-castrillon", "tejados-llanera", "tejados-corvera"],
+    "servicio":    ["reforma-tejados-oviedo", "reparacion-tejados-asturias", "impermeabilizacion-cubiertas", "canalones-asturias", "panel-sandwich-asturias", "tejados-pizarra-teja", "urgencias-goteras-24h", "aislamiento"],
+    "conversion":  {
+      "goteras":     ["reparacion-goteras-oviedo", "reparacion-goteras-gijon", "reparacion-goteras-aviles", "reparacion-goteras-siero", "reparacion-goteras-langreo", "reparacion-goteras-mieres", "reparacion-goteras-castrillon", "reparacion-goteras-llanera", "reparacion-goteras-corvera"],
+      "presupuesto": ["presupuesto-tejados-oviedo", "presupuesto-tejados-gijon", "presupuesto-tejados-aviles", "presupuesto-tejados-siero", "presupuesto-tejados-langreo", "presupuesto-tejados-mieres", "presupuesto-tejados-castrillon", "presupuesto-tejados-llanera", "presupuesto-tejados-corvera"],
+      "urgencias":   ["urgencias-tejados-oviedo", "urgencias-tejados-gijon", "urgencias-tejados-aviles", "urgencias-tejados-siero", "urgencias-tejados-langreo", "urgencias-tejados-mieres", "urgencias-tejados-castrillon", "urgencias-tejados-llanera", "urgencias-tejados-corvera"],
+      "trabajos":    ["trabajos-realizados-oviedo", "trabajos-realizados-gijon", "trabajos-realizados-aviles", "trabajos-realizados-siero", "trabajos-realizados-langreo", "trabajos-realizados-mieres", "trabajos-realizados-castrillon", "trabajos-realizados-llanera", "trabajos-realizados-corvera"],
+      "precios":     ["precios-reforma-tejado-oviedo", "precios-reforma-tejado-gijon", "precios-reforma-tejado-aviles", "precios-reforma-tejado-siero", "precios-reforma-tejado-langreo", "precios-reforma-tejado-mieres", "precios-reforma-tejado-castrillon", "precios-reforma-tejado-llanera", "precios-reforma-tejado-corvera"]
+    }
+  },
+
+  "ciudades": ["Oviedo", "Gijón", "Avilés", "Siero", "Langreo", "Mieres", "Castrillón", "Llanera", "Corvera"],
+
+  "anchor_texts": {
+    "goteras": [
+      "reparación de goteras urgentes",
+      "arreglar goteras",
+      "solucionar filtraciones",
+      "técnico de goteras",
+      "reparar goteras",
+      "servicio de goteras",
+      "especialistas en goteras",
+      "goteras con garantía"
+    ],
+    "presupuesto": [
+      "solicitar presupuesto gratuito",
+      "pedir presupuesto sin compromiso",
+      "presupuesto gratis",
+      "precio de tu tejado",
+      "cuánto cuesta el tejado",
+      "solicitar valoración gratuita",
+      "presupuesto personalizado"
+    ],
+    "urgencias": [
+      "servicio de urgencias 24 horas",
+      "urgencias de tejados 24/7",
+      "atención de emergencias",
+      "servicio urgente de tejados",
+      "emergencias 24h",
+      "urgencias fin de semana",
+      "respuesta inmediata"
+    ],
+    "trabajos": [
+      "ver trabajos realizados",
+      "nuestro portfolio",
+      "obras ejecutadas",
+      "proyectos completados",
+      "casos reales",
+      "galería de trabajos",
+      "referencias y opiniones"
+    ],
+    "precios": [
+      "ver tabla de precios",
+      "cuánto cuesta reformar el tejado",
+      "precios orientativos",
+      "coste de la reforma",
+      "precio por metro cuadrado",
+      "tarifas actualizadas",
+      "guía de precios 2024"
+    ],
+    "zona_oviedo": [
+      "tejados en Oviedo",
+      "cubiertas en Oviedo",
+      "especialistas en Oviedo",
+      "empresa de tejados en Oviedo"
+    ],
+    "zona_gijon": [
+      "tejados en Gijón",
+      "cubiertas en Gijón",
+      "especialistas en Gijón",
+      "empresa de tejados en Gijón"
+    ],
+    "zona_aviles": [
+      "tejados en Avilés",
+      "cubiertas en Avilés",
+      "especialistas en Avilés"
+    ],
+    "zona_siero": [
+      "tejados en Siero",
+      "cubiertas en Siero",
+      "especialistas en Lugones y Siero"
+    ],
+    "zona_langreo": [
+      "tejados en Langreo",
+      "cubiertas en el Valle del Nalón",
+      "especialistas en Langreo"
+    ],
+    "zona_mieres": [
+      "tejados en Mieres",
+      "cubiertas en el Valle del Caudal",
+      "tejados en Turón y Mieres"
+    ],
+    "zona_castrillon": [
+      "tejados en Castrillón",
+      "cubiertas en Piedras Blancas",
+      "especialistas en Castrillón"
+    ],
+    "zona_llanera": [
+      "tejados en Llanera",
+      "cubiertas en La Corredoria",
+      "especialistas en Llanera"
+    ],
+    "zona_corvera": [
+      "tejados en Corvera",
+      "cubiertas en Corvera de Asturias",
+      "especialistas en Corvera"
+    ],
+    "servicio_reforma": [
+      "reforma integral de tejados",
+      "rehabilitación completa de cubierta",
+      "reforma de tejados con garantía",
+      "sustitución completa del tejado"
+    ],
+    "servicio_impermeabilizacion": [
+      "impermeabilización de cubiertas",
+      "impermeabilizar la cubierta plana",
+      "sistema de impermeabilización",
+      "membrana impermeable para tejado"
+    ],
+    "servicio_canalones": [
+      "instalación de canalones",
+      "canalones de aluminio continuo",
+      "sustitución de canalones",
+      "canalones sin juntas"
+    ],
+    "servicio_pizarra": [
+      "tejados de pizarra natural",
+      "cubierta de pizarra asturiana",
+      "pizarra de Valdeorras",
+      "tejado de teja cerámica"
+    ],
+    "servicio_aislamiento": [
+      "aislamiento térmico bajo cubierta",
+      "aislamiento del tejado",
+      "mejorar el aislamiento de la cubierta"
+    ]
+  },
+
+  "link_insertion_points": {
+    "intro_section": {
+      "links": 2,
+      "types": ["zona", "servicio"],
+      "descripcion": "2 enlaces al inicio: enlaza la página de zona y un servicio relacionado"
+    },
+    "services_section": {
+      "links": 3,
+      "types": ["conversion", "servicio"],
+      "descripcion": "3 enlaces en la sección de servicios: prioriza conversión (presupuesto/urgencias)"
+    },
+    "content_section": {
+      "links": 2,
+      "types": ["conversion", "zona"],
+      "descripcion": "2 enlaces en el cuerpo: varía entre conversión y zonas relacionadas"
+    },
+    "cta_section": {
+      "links": 1,
+      "types": ["conversion"],
+      "descripcion": "1 enlace de alta conversión al final, siempre hacia presupuesto o urgencias"
+    }
+  },
+
+  "interlinking_matrix": {
+    "descripcion": "Qué páginas debe enlazar cada tipo",
+    "goteras": {
+      "obligatorio": ["urgencias-{ciudad}", "presupuesto-tejados-{ciudad}", "tejados-{ciudad}"],
+      "recomendado": ["reparacion-tejados-asturias", "impermeabilizacion-cubiertas", "urgencias-goteras-24h"],
+      "opcional":    ["trabajos-realizados-{ciudad}", "precios-reforma-tejado-{ciudad}"]
+    },
+    "presupuesto": {
+      "obligatorio": ["tejados-{ciudad}", "reforma-tejados-oviedo", "reparacion-tejados-asturias"],
+      "recomendado": ["goteras-{ciudad}", "precios-reforma-tejado-{ciudad}", "trabajos-realizados-{ciudad}"],
+      "opcional":    ["urgencias-tejados-{ciudad}", "impermeabilizacion-cubiertas"]
+    },
+    "urgencias": {
+      "obligatorio": ["reparacion-goteras-{ciudad}", "urgencias-goteras-24h", "tejados-{ciudad}"],
+      "recomendado": ["presupuesto-tejados-{ciudad}", "reparacion-tejados-asturias"],
+      "opcional":    ["impermeabilizacion-cubiertas", "canalones-asturias"]
+    },
+    "trabajos": {
+      "obligatorio": ["tejados-{ciudad}", "presupuesto-tejados-{ciudad}"],
+      "recomendado": ["reforma-tejados-oviedo", "reparacion-tejados-asturias", "precios-reforma-tejado-{ciudad}"],
+      "opcional":    ["impermeabilizacion-cubiertas", "tejados-pizarra-teja", "canalones-asturias"]
+    },
+    "precios": {
+      "obligatorio": ["presupuesto-tejados-{ciudad}", "tejados-{ciudad}"],
+      "recomendado": ["reforma-tejados-oviedo", "tejados-pizarra-teja", "aislamiento"],
+      "opcional":    ["impermeabilizacion-cubiertas", "panel-sandwich-asturias", "trabajos-realizados-{ciudad}"]
+    }
+  },
+
+  "phrases_to_link": {
+    "descripcion": "Frases en el contenido que deben convertirse en enlaces",
+    "goteras": [
+      { "phrase": "reparación de goteras",   "target": "reparacion-tejados-asturias",      "anchor": "reparación de goteras urgentes" },
+      { "phrase": "urgencias 24",            "target": "urgencias-goteras-24h",            "anchor": "servicio de urgencias 24 horas" },
+      { "phrase": "presupuesto",             "target": "presupuesto-tejados-{ciudad}",     "anchor": "presupuesto gratuito" },
+      { "phrase": "impermeabilización",      "target": "impermeabilizacion-cubiertas",     "anchor": "impermeabilización de cubiertas" },
+      { "phrase": "canalones",               "target": "canalones-asturias",               "anchor": "instalación de canalones" },
+      { "phrase": "reforma integral",        "target": "reforma-tejados-oviedo",           "anchor": "reforma integral de tejados" }
+    ],
+    "presupuesto": [
+      { "phrase": "reforma integral",        "target": "reforma-tejados-oviedo",           "anchor": "reforma integral de tejados" },
+      { "phrase": "reparación de goteras",   "target": "reparacion-goteras-{ciudad}",      "anchor": "reparación de goteras urgentes" },
+      { "phrase": "impermeabilización",      "target": "impermeabilizacion-cubiertas",     "anchor": "impermeabilización de cubiertas" },
+      { "phrase": "pizarra natural",         "target": "tejados-pizarra-teja",             "anchor": "tejados de pizarra natural" },
+      { "phrase": "canalones",               "target": "canalones-asturias",               "anchor": "instalación de canalones" },
+      { "phrase": "urgencia",                "target": "urgencias-tejados-{ciudad}",       "anchor": "servicio de urgencias 24h" }
+    ],
+    "urgencias": [
+      { "phrase": "reparación de goteras",   "target": "reparacion-goteras-{ciudad}",      "anchor": "reparación de goteras urgentes" },
+      { "phrase": "presupuesto",             "target": "presupuesto-tejados-{ciudad}",     "anchor": "solicitar presupuesto gratuito" },
+      { "phrase": "reforma integral",        "target": "reforma-tejados-oviedo",           "anchor": "reforma integral de tejados" },
+      { "phrase": "impermeabilización",      "target": "impermeabilizacion-cubiertas",     "anchor": "impermeabilización de cubiertas" }
+    ],
+    "trabajos": [
+      { "phrase": "presupuesto",             "target": "presupuesto-tejados-{ciudad}",     "anchor": "solicitar presupuesto gratuito" },
+      { "phrase": "reforma integral",        "target": "reforma-tejados-oviedo",           "anchor": "reforma integral de tejados" },
+      { "phrase": "reparación de goteras",   "target": "reparacion-goteras-{ciudad}",      "anchor": "reparación de goteras urgentes" },
+      { "phrase": "impermeabilización",      "target": "impermeabilizacion-cubiertas",     "anchor": "impermeabilización de cubiertas" },
+      { "phrase": "pizarra natural",         "target": "tejados-pizarra-teja",             "anchor": "tejados de pizarra natural" },
+      { "phrase": "canalones",               "target": "canalones-asturias",               "anchor": "instalación de canalones" },
+      { "phrase": "precios",                 "target": "precios-reforma-tejado-{ciudad}",  "anchor": "ver tabla de precios" }
+    ],
+    "precios": [
+      { "phrase": "reforma integral",        "target": "reforma-tejados-oviedo",           "anchor": "reforma integral de tejados" },
+      { "phrase": "pizarra natural",         "target": "tejados-pizarra-teja",             "anchor": "tejados de pizarra natural" },
+      { "phrase": "impermeabilización",      "target": "impermeabilizacion-cubiertas",     "anchor": "impermeabilización de cubiertas" },
+      { "phrase": "canalones",               "target": "canalones-asturias",               "anchor": "canalones de aluminio continuo" },
+      { "phrase": "aislamiento",             "target": "aislamiento",                      "anchor": "aislamiento térmico bajo cubierta" },
+      { "phrase": "panel sándwich",          "target": "panel-sandwich-asturias",          "anchor": "cubiertas de panel sándwich" },
+      { "phrase": "presupuesto",             "target": "presupuesto-tejados-{ciudad}",     "anchor": "solicitar presupuesto gratuito" }
+    ]
+  },
+
+  "ciudad_slug_map": {
+    "Oviedo":    "oviedo",
+    "Gijón":     "gijon",
+    "Avilés":    "aviles",
+    "Siero":     "siero",
+    "Langreo":   "langreo",
+    "Mieres":    "mieres",
+    "Castrillón": "castrillon",
+    "Llanera":   "llanera",
+    "Corvera":   "corvera"
+  }
+}

@@ -1,0 +1,144 @@
+<!--
+  ═══════════════════════════════════════════════════════════════════
+  HEADER - NAVEGACIÓN PRINCIPAL
+  ═══════════════════════════════════════════════════════════════════
+  
+  Este archivo se incluye en TODAS las páginas.
+  
+  SECCIONES:
+  1. Barra superior con teléfono y WhatsApp
+  2. Header principal con logo y menú
+  3. Navegación responsive con menú hamburguesa
+  
+  Para cambiar el header en TODO el sitio:
+  - Edita este archivo
+  - Ejecuta: node generate.js
+  - ¡Listo! Todas las páginas se actualizan
+  
+  ═══════════════════════════════════════════════════════════════════
+-->
+
+<!-- Barra superior sticky con contacto rápido -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-content">
+            <span class="topbar-message">
+                ⚡ Respuesta en menos de 2 horas | Presupuesto gratuito
+            </span>
+            <div class="topbar-actions">
+                <a href="tel:{{PHONE_LINK}}" class="topbar-phone">
+                    📞 {{PHONE}}
+                </a>
+                <a href="https://wa.me/{{WHATSAPP}}?text=Hola, necesito presupuesto" 
+                   class="topbar-whatsapp" 
+                   target="_blank"
+                   rel="noopener">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header principal -->
+<header class="header" id="main-header">
+    <div class="container">
+        <div class="header-content">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="/img/brand.png" 
+                     alt="Cubiertas David - Logo" 
+                     width="200" 
+                     height="60">
+                <span class="logo-text">
+                    <strong>CUBIERTAS DAVID</strong>
+                    <small>Tejados y Cubiertas en Asturias</small>
+                </span>
+            </a>
+            
+            <!-- Navegación principal - Desktop -->
+            <nav class="nav" id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="/">Inicio</a></li>
+                    
+                    <!-- Menú desplegable Servicios -->
+                    <li class="dropdown">
+                        <span class="dropdown-toggle">Servicios ▼</span>
+                        <div class="dropdown-menu">
+                            <a href="/reforma-tejados-oviedo.html">Reforma de Tejados</a>
+                            <a href="/reparacion-tejados-asturias.html">Reparación</a>
+                            <a href="/impermeabilizacion.html">Impermeabilización</a>
+                            <a href="/canalones-asturias.html">Canalones</a>
+                            <a href="/panel-sandwich.html">Panel Sándwich</a>
+                            <a href="/pizarra-teja.html">Pizarra y Teja</a>
+                            <a href="/aislamiento.html">Aislamiento</a>
+                            <a href="/urgencias-24h.html">Urgencias 24/7</a>
+                        </div>
+                    </li>
+                    
+                    <!-- Menú desplegable Zonas -->
+                    <li class="dropdown">
+                        <span class="dropdown-toggle">Zonas ▼</span>
+                        <div class="dropdown-menu dropdown-menu-wide">
+                            <a href="/tejados-oviedo.html">Oviedo</a>
+                            <a href="/tejados-gijon.html">Gijón</a>
+                            <a href="/tejados-aviles.html">Avilés</a>
+                            <a href="/tejados-siero.html">Siero</a>
+                            <a href="/tejados-langreo.html">Langreo</a>
+                            <a href="/tejados-mieres.html">Mieres</a>
+                            <a href="/zonas.html">Toda Asturias ➜</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="/trabajos-realizados.html">Trabajos</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+                
+                <!-- Botón CTA en el nav -->
+                <a href="tel:{{PHONE_LINK}}" class="btn btn-header">
+                    📞 Llamar Ahora
+                </a>
+            </nav>
+            
+            <!-- Botón hamburguesa - Mobile -->
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!--
+  ═══════════════════════════════════════════════════════════════════
+  INSTRUCCIONES DE PERSONALIZACIÓN
+  ═══════════════════════════════════════════════════════════════════
+  
+  1. CAMBIAR EL LOGO:
+     - Sube tu logo a /dist/img/logo-cubiertas-david.png
+     - Ajusta width/height si tu logo tiene otras proporciones
+  
+  2. AÑADIR/QUITAR ENLACES DEL MENÚ:
+     - Servicios: Edita las líneas 75-82
+     - Zonas: Edita las líneas 88-95
+     - Añade/elimina las líneas <a href="...">...</a>
+  
+  3. CAMBIAR TEXTO DE LA TOPBAR:
+     - Edita la línea 28
+     - Ejemplo: "🏆 Más de 25 años de experiencia"
+  
+  4. CAMBIAR NÚMEROS/ENLACES:
+     - Los números se toman automáticamente de CONFIG en generate.js
+     - Para cambiarlos, edita generate.js líneas 20-28
+  
+  5. AÑADIR MÁS MENÚS DESPLEGABLES:
+     - Copia el bloque <li class="dropdown">...</li>
+     - Cambia el texto y los enlaces
+  
+  6. ESTILOS:
+     - Todos los estilos están en /css/header.css
+     - Para cambiar colores, edita las variables CSS
+  
+  ═══════════════════════════════════════════════════════════════════
+-->

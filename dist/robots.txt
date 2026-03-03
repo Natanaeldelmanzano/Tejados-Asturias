@@ -1,0 +1,22 @@
+# ═══════════════════════════════════════════════════════════════════
+# robots.txt — CubiertasDavid.com
+# Actualizado: 2026-03-03
+# ═══════════════════════════════════════════════════════════════════
+
+User-agent: *
+
+# Permitir todo el contenido público
+Allow: /
+
+# Bloquear páginas legales (no aportan SEO pero sí consumen crawl budget)
+Disallow: /aviso-legal.html
+Disallow: /privacidad.html
+Disallow: /cookies.html
+
+# Bloquear carpetas internas si existen
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://www.cubiertasdavid.com/sitemap.xml

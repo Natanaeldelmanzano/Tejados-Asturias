@@ -1,0 +1,519 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════
+ * CARRUSEL DE ZONAS - ESTILOS RESPONSIVE
+ * ═══════════════════════════════════════════════════════════════════
+ * 
+ * Carrusel optimizado para imágenes 1344x768 PNG
+ * Adaptación perfecta a todos los tamaños de pantalla
+ * 
+ * ═══════════════════════════════════════════════════════════════════
+ */
+
+/* ═══════════════════════════════════════════════════════════════
+   SECCIÓN PRINCIPAL DEL CARRUSEL
+   ═══════════════════════════════════════════════════════════════ */
+
+.zones-carousel-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Header de la sección */
+.carousel-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.carousel-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1B4B8A;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.carousel-header p {
+    font-size: 1.1rem;
+    color: #0066be;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONTENEDOR DEL CARRUSEL
+   ═══════════════════════════════════════════════════════════════ */
+
+.zones-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px; /* Espacio para botones laterales */
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SLIDES INDIVIDUALES
+   ═══════════════════════════════════════════════════════════════ */
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor de imagen con aspect ratio 16:9 */
+.slide-image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 57.14%; /* Aspect ratio 1344/768 = 1.75 = 16:9 aprox */
+    overflow: hidden;
+    background: #000;
+}
+
+.slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+/* Efecto zoom al hover */
+.carousel-slide:hover .slide-image {
+    transform: scale(1.05);
+}
+
+/* Overlay oscuro sobre la imagen para mejor legibilidad del texto */
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.4) 50%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+    z-index: 1;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CONTENIDO DEL SLIDE (Texto + Botón)
+   ═══════════════════════════════════════════════════════════════ */
+
+.slide-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    z-index: 2;
+    color: #fff;
+    text-align: left;
+}
+
+.slide-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+.slide-description {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.95);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BOTÓN DEL SLIDE
+   ═══════════════════════════════════════════════════════════════ */
+
+.slide-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: #FF6B35;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.slide-btn:hover {
+    background: #E55A2B;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.slide-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.slide-btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BOTONES DE NAVEGACIÓN (Anterior / Siguiente)
+   ═══════════════════════════════════════════════════════════════ */
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-btn:hover {
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+    left: 0;
+}
+
+.carousel-btn-next {
+    right: 0;
+}
+
+.carousel-btn svg {
+    color: #1B4B8A;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INDICADORES (DOTS)
+   ═══════════════════════════════════════════════════════════════ */
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(27, 75, 138, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator:hover {
+    background: rgba(27, 75, 138, 0.5);
+    transform: scale(1.2);
+}
+
+.indicator.active {
+    background: #1B4B8A;
+    width: 32px;
+    border-radius: 6px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   CTA ADICIONAL
+   ═══════════════════════════════════════════════════════════════ */
+
+.carousel-cta {
+    text-align: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.carousel-cta p {
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.cta-link {
+    color: #1B4B8A;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.cta-link:hover {
+    color: #FF6B35;
+    text-decoration: underline;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - TABLET (768px - 1024px)
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+    .zones-carousel-section {
+        padding: 60px 0;
+    }
+
+    .carousel-header h2 {
+        font-size: 2rem;
+    }
+
+    .carousel-header p {
+        font-size: 1rem;
+    }
+
+    .zones-carousel {
+        padding: 0 50px;
+    }
+
+    .slide-content {
+        padding: 30px;
+    }
+
+    .slide-title {
+        font-size: 2rem;
+    }
+
+    .slide-description {
+        font-size: 1rem;
+    }
+
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - MOBILE (max 767px)
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 767px) {
+    .zones-carousel-section {
+        padding: 40px 0;
+    }
+
+    .carousel-header {
+        margin-bottom: 30px;
+    }
+
+    .carousel-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-header p {
+        font-size: 0.95rem;
+    }
+
+    /* Botones laterales más pequeños en móvil */
+    .zones-carousel {
+        padding: 0 40px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Contenido del slide más compacto */
+    .slide-content {
+        padding: 20px;
+    }
+
+    .slide-title {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    .slide-description {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .slide-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Indicadores más pequeños */
+    .carousel-indicators {
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    .indicator.active {
+        width: 24px;
+    }
+
+    .carousel-cta p {
+        font-size: 0.95rem;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE - MOBILE PEQUEÑO (max 480px)
+   ═══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 480px) {
+    .zones-carousel {
+        padding: 0 35px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slide-content {
+        padding: 15px;
+    }
+
+    .slide-title {
+        font-size: 1.3rem;
+    }
+
+    .slide-description {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .slide-btn {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    .slide-btn span {
+        display: none; /* Ocultar texto en móviles muy pequeños */
+    }
+
+    .slide-btn::after {
+        content: 'Ver más'; /* Texto corto alternativo */
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ANIMACIONES Y TRANSICIONES
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Fade in inicial */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.zones-carousel-section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Efecto de carga para imágenes */
+.slide-image {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   ACCESIBILIDAD
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Focus visible para navegación por teclado */
+.carousel-btn:focus,
+.indicator:focus,
+.slide-btn:focus {
+    outline: 3px solid #FF6B35;
+    outline-offset: 3px;
+}
+
+/* Reducir animaciones para usuarios con preferencias de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .carousel-track,
+    .slide-image,
+    .carousel-btn,
+    .indicator,
+    .slide-btn {
+        transition: none;
+    }
+    
+    .zones-carousel-section {
+        animation: none;
+    }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   OPTIMIZACIONES DE RENDIMIENTO
+   ═══════════════════════════════════════════════════════════════ */
+
+/* GPU acceleration para animaciones suaves */
+.carousel-track,
+.slide-image,
+.carousel-btn {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+/* Lazy loading hint */
+.slide-image[loading="lazy"] {
+    content-visibility: auto;
+}
