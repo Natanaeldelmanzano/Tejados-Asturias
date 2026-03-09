@@ -1,22 +1,31 @@
 # ═══════════════════════════════════════════════════════════════════
 # robots.txt — CubiertasDavid.com
-# Actualizado: 2026-03-03
+# Actualizado: 2026-03-09
 # ═══════════════════════════════════════════════════════════════════
 
 User-agent: *
 
-# Permitir todo el contenido público
+# Permitir TODO el contenido público incluidas páginas legales
 Allow: /
 
-# Bloquear páginas legales (no aportan SEO pero sí consumen crawl budget)
-Disallow: /aviso-legal.html
-Disallow: /privacidad.html
-Disallow: /cookies.html
-
-# Bloquear carpetas internas si existen
+# Bloquear carpetas internas solamente
 Disallow: /node_modules/
 Disallow: /src/
 Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /package.json
+Disallow: /admin/
+Disallow: /private/
+
+# Permitir explícitamente archivos importantes para SEO
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /aviso-legal.html
+Allow: /privacidad.html
+Allow: /cookies.html
 
 # Sitemap
 Sitemap: https://www.cubiertasdavid.com/sitemap.xml
+
+# Configuración de crawl delay
+Crawl-delay: 0
