@@ -11,7 +11,8 @@ const path = require('path');
 const CONFIG = {
     DOMAIN: 'https://www.cubiertasdavid.com',
     DIST_DIR: './dist',
-    OUTPUT: './public/sitemap.xml'
+    OUTPUT: './dist/sitemap.xml',
+    OUTPUT_PUBLIC: './public/sitemap.xml'
 };
 
 // Función para leer archivos HTML en dist/
@@ -88,9 +89,11 @@ function generateSitemap() {
         console.log('\n📁 Carpeta /public creada');
     }
 
-    // Escribir archivo
+    // Escribir archivo en ambas ubicaciones (dist y public)
     fs.writeFileSync(CONFIG.OUTPUT, sitemapXml, 'utf-8');
+    fs.writeFileSync(CONFIG.OUTPUT_PUBLIC, sitemapXml, 'utf-8');
     console.log(`\n✅ Sitemap.xml generado: ${CONFIG.OUTPUT}`);
+    console.log(`✅ Sitemap.xml generado: ${CONFIG.OUTPUT_PUBLIC}`);
     console.log(`📊 Total de URLs: ${pages.length}`);
     console.log('\n═'.repeat(70));
     console.log('\n💡 Próximos pasos:');
