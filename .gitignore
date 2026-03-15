@@ -43,3 +43,9 @@ $RECYCLE.BIN/
 
 # Generated files (pero mantener src/)
 # (dist/ se regenera con npm run generate)
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
