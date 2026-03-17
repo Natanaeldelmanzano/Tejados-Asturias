@@ -11,14 +11,11 @@
     <title>Tejados Avilés | Empresa Tejados Asturias ☎️ 693 743 627</title>
     <meta name="description" content="Tejados en Avilés. Reparación e instalación. La Luz, Versalles, Villalegre, Centro. Presupuesto gratuito. Respuesta en 2 horas.">
     
-    <!-- Canonical URL -->
+    <!-- Canonical URL — generado por generate.js con la URL exacta -->
     <link rel="canonical" href="https://www.cubiertasdavid.com/tejados-aviles">
     
     <!-- Robots -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Keywords SEO -->
-    <meta name="keywords" content="tejados asturias, cubiertas oviedo, reparación tejados, impermeabilización, canalones, empresa tejados asturias">
     
     <!-- Geo Meta Tags -->
     <meta name="geo.region" content="ES-AS">
@@ -31,9 +28,10 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Tejados Avilés | Empresa Tejados Asturias ☎️ 693 743 627">
     <meta property="og:description" content="Tejados en Avilés. Reparación e instalación. La Luz, Versalles, Villalegre, Centro. Presupuesto gratuito. Respuesta en 2 horas.">
+    <!-- FIX: og:url usa https://www.cubiertasdavid.com/tejados-aviles/ generado por generate.js (evita /index/ en home) -->
     <meta property="og:url" content="https://www.cubiertasdavid.com/tejados-aviles/">
     <meta property="og:site_name" content="Cubiertas David">
-    <meta property="og:image" content="/img/tejados-aviles.jpg">
+    <meta property="og:image" content="https://www.cubiertasdavid.com/img/tejados-aviles.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
@@ -42,7 +40,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tejados Avilés | Empresa Tejados Asturias ☎️ 693 743 627">
     <meta name="twitter:description" content="Tejados en Avilés. Reparación e instalación. La Luz, Versalles, Villalegre, Centro. Presupuesto gratuito. Respuesta en 2 horas.">
-    <meta name="twitter:image" content="/img/tejados-aviles.jpg">
+    <meta name="twitter:image" content="https://www.cubiertasdavid.com/img/tejados-aviles.jpg">
     
     <!-- Author & Publisher -->
     <meta name="author" content="Cubiertas David">
@@ -75,7 +73,7 @@
     <meta name="theme-color" content="#1B4B8A">
     
     <!-- ═══════════════════════════════════════════════════════════
-         SCHEMA.ORG JSON-LD
+         SCHEMA.ORG JSON-LD — generado dinámicamente por generate.js
          ═══════════════════════════════════════════════════════ -->
     
         <script type="application/ld+json">
@@ -169,7 +167,12 @@
     "ratingCount": 47,
     "bestRating": 5
   },
-  "sameAs": []
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61585653094778",
+    "https://www.instagram.com/cubiertasdavid/",
+    "https://www.linkedin.com/in/david-cubiertas-08b3b43b5/",
+    "https://www.tiktok.com/@cubiertas.david.oviedo"
+  ]
 }
         </script>
         <script type="application/ld+json">
@@ -211,11 +214,25 @@
   }
 }
         </script>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         GOOGLE ANALYTICS 4
+         INSTRUCCIONES: Reemplaza G-W1DZXQX2B3 por tu ID real.
+         Ve a analytics.google.com → Admin → Flujos de datos → 
+         Selecciona tu flujo web → copia el ID (formato G-XXXXXXXXXX)
+         ═══════════════════════════════════════════════════════ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1DZXQX2B3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W1DZXQX2B3');
+    </script>
 </head>
 
 <body>
     <!-- ═══════════════════════════════════════════════════════════
-         HEADER - Navegación principal
+         HEADER — Navegación principal (src/header.html)
          ═══════════════════════════════════════════════════════ -->
     <!--
   ═══════════════════════════════════════════════════════════════════
@@ -362,7 +379,7 @@
   ═══════════════════════════════════════════════════════════════════
 -->
 
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          HERO SECTION
          ═══════════════════════════════════════════════════════ -->
@@ -370,33 +387,34 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
+
                 <!-- Breadcrumb -->
                 <nav class="breadcrumb" aria-label="Ruta de navegación">
                     <span>Inicio > Zonas > Avilés</span>
                 </nav>
-                
-                <!-- H1 - Solo UNO por página -->
+
+                <!-- H1 — Solo UNO por página, definido en pages.json -->
                 <h1>Tejados en Avilés</h1>
-                
+
                 <!-- Subtítulo -->
                 <p class="subtitle">Expertos en tejados en toda Avilés</p>
-                
+
                 <!-- Texto del hero -->
                 <p class="hero-text">Servicio profesional en Avilés y comarca. Atendemos todos los barrios de la villa.</p>
-                
-                <!-- CTAs -->
+
+                <!-- CTAs principales -->
                 <div class="hero-ctas">
                     <a href="tel:+34693743627" class="btn btn-primary">
                         📞 Llamar 693 743 627
                     </a>
-                    <a href="https://wa.me/34693743627?text=Hola, necesito presupuesto para mi tejado" 
-                       class="btn btn-whatsapp" 
-                       target="_blank" 
+                    <a href="https://wa.me/34693743627?text=Hola,%20necesito%20presupuesto%20para%20mi%20tejado"
+                       class="btn btn-whatsapp"
+                       target="_blank"
                        rel="noopener noreferrer">
                         💬 WhatsApp
                     </a>
                 </div>
-                
+
                 <!-- Trust Badges -->
                 <div class="trust-badges">
                     <div class="badge">
@@ -412,14 +430,12 @@
                         <span class="badge-text">Garantía 10 años</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         ✨ CARRUSEL DE ZONAS - NUEVA SECCIÓN ✨
-         Se incluye automáticamente después del hero
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- CARRUSEL DE ZONAS — justo debajo del hero, posición original -->
     <section class="zones-carousel-section">
     <div class="container">
         <div class="carousel-header">
@@ -440,7 +456,7 @@
                         </div>
                         <div class="slide-content">
                             <h3 class="slide-title">Tejados en Oviedo</h3>
-                            <p class="slide-description">Centro, Naranco, Llatana y todas las parroquias</p>
+                            <p class="slide-description">Centro, Naranco, Montecerrao, San Lázaro y todas las parroquias</p>
                             <a href="/tejados-oviedo.html" class="slide-btn">
                                 <span>Ver servicios en Oviedo</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -476,7 +492,7 @@
                         </div>
                         <div class="slide-content">
                             <h3 class="slide-title">Tejados en Avilés</h3>
-                            <p class="slide-description">La Luz, Versalles, Centro Histórico</p>
+                            <p class="slide-description">La Luz, Versalles, Centro Histórico y todas las parroquias</p>
                             <a href="/tejados-aviles.html" class="slide-btn">
                                 <span>Ver servicios en Avilés</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -630,17 +646,16 @@
     </div>
 </section>
 
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         MAIN CONTENT + SIDEBAR
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- MAIN CONTENT + SIDEBAR -->
     <div class="page-layout">
         <div class="container">
             <div class="layout-grid">
+
                 <!-- MAIN CONTENT -->
                 <main class="main-content" id="main-content" role="main">
                     <section class='intro-section'><p>En <strong>Avilés</strong>, villa industrial y portuaria en la costa central asturiana, los tejados enfrentan <strong>condiciones únicas</strong>: cercanía al mar (con la corrosión que ello implica), entorno industrial (contaminación atmosférica), y un clima atlántico muy húmedo. Hemos trabajado en barrios como <strong>La Luz</strong> (junto a la ría), <strong>Centro Histórico</strong> (casco antiguo protegido), <strong>Versalles y Villalegre</strong> (zonas residenciales), y <strong>Llaranes y La Carriona</strong> (barrios obreros tradicionales).</p><p>Con más de 25 años de experiencia en Avilés, conocemos perfectamente las particularidades de cada zona: desde las casas señoriales del centro con sus tejados de pizarra hasta los bloques de viviendas de los polígonos con cubiertas planas, pasando por las viviendas obreras tradicionales de La Luz.</p></section><section class='climate-section'><h2>Desafíos Específicos de Avilés</h2><h3>Clima Marítimo Industrial</h3><p>Avilés combina dos factores agresivos para los tejados:</p><ul><li><strong>Salinidad del aire:</strong> La ría de Avilés llega hasta el centro de la villa. El aire cargado de sal marina acelera la corrosión de todos los elementos metálicos: canalones, bajantes, tornillos, estructuras. Un canalón de acero galvanizado sin protección puede oxidarse en 5-8 años.</li><li><strong>Contaminación atmosférica:</strong> Aunque mucho menor que en décadas pasadas, la actividad industrial (acerías, químicas) ha dejado una legacy de deposición de partículas que afecta a los tejados. Las tejas en zonas cercanas a polígonos industriales tienden a ennegrecerse y acumular suciedad.</li><li><strong>Humedad extrema:</strong> Avilés tiene más de 1.100mm de lluvia anual repartida en ~160 días. La humedad ambiental es altísima incluso cuando no llueve, favoreciendo musgo y líquenes.</li><li><strong>Vientos de la ría:</strong> Los vientos canalizan a través de la ría y se aceleran. En temporales, las rachas pueden superar los 90 km/h en zonas expuestas.</li></ul></section><section class='problems-section'><h2>Problemas Típicos por Zonas</h2><h3>En La Luz (Barrio Obrero Junto a la Ría)</h3><p>La Luz es el barrio marinero e industrial de Avilés, con viviendas de 2-3 plantas de construcción tradicional:</p><ul><li><strong>Corrosión acelerada por salinidad:</strong> Estando a 100-200 metros de la ría, el aire salino es intenso. Canalones metálicos sin tratamiento especial se perforan en pocos años.</li><li><strong>Humedad por orientación:</strong> Muchas viviendas dan al norte (hacia la ría). Reciben poco sol y mucha humedad. Las tejas de orientación norte acumulan musgo rápidamente.</li><li><strong>Estructuras antiguas:</strong> Muchas viviendas de La Luz tienen más de 60-80 años. Las estructuras de madera pueden estar comprometidas por décadas de humedad.</li><li><strong>Filtraciones en muros:</strong> La humedad no solo viene del tejado sino que sube por capilaridad desde los cimientos (nivel freático alto cerca de la ría).</li></ul><h3>En Centro Histórico y Casco Antiguo</h3><p>El casco antiguo de Avilés (plaza del Ayuntamiento, calle Galiana, calle Rivero) tiene edificios con protección patrimonial:</p><ul><li><strong>Normativa estricta:</strong> Cualquier intervención visible desde la calle requiere autorización municipal. No se puede cambiar el tipo de teja, el color, ni alterar la estética histórica.</li><li><strong>Tejados de pizarra antigua:</strong> Muchos edificios tienen tejados de pizarra original con más de 100 años. La pizarra está bien, pero los elementos de fijación (clavos de forja) están oxidados.</li><li><strong>Acceso complicado:</strong> Calles peatonales y estrechas dificultan el acceso con materiales y maquinaria.</li></ul><h3>En Versalles, Villalegre y Zonas Residenciales</h3><p>Los barrios residenciales modernos tienen edificios de 6-10 plantas con cubiertas planas:</p><ul><li><strong>Impermeabilización envejecida:</strong> Edificios de los años 70-80 con telas asfálticas que nunca se renovaron. Goteras crónicas en plantas superiores.</li><li><strong>Problemas estructurales en cubiertas:</strong> Algunas cubiertas planas tienen problemas de diseño (falta de pendiente) que causan acumulación permanente de agua.</li><li><strong>Juntas de dilatación agrietadas:</strong> En edificios largos, las juntas de dilatación se agrietan con los años y filtran agua.</li></ul><h3>En Llaranes, La Carriona y Barrios Tradicionales</h3><p>Barrios obreros con mezcla de viviendas unifamiliares y bloques pequeños:</p><ul><li><strong>Tejas antiguas desplazadas:</strong> Tejados de teja árabe o cerámica con décadas de antigüedad. Las tejas se desplazan con el viento y generan goteras.</li><li><strong>Canalones obstruidos:</strong> Muchas viviendas tienen canalones de PVC de los años 80-90 que nunca se limpian. Las hojas y suciedad los obstruyen completamente.</li><li><strong>Falta de aislamiento:</strong> Viviendas construidas en los 60-70 sin aislamiento térmico. Resultado: frío en invierno, calor en verano, facturas energéticas altas.</li></ul></section><section class='neighborhoods-section'><h2>Barrios de Avilés donde Trabajamos</h2><h3>Zona Norte (cerca de la ría)</h3><p><strong>La Luz, Versalles Norte:</strong> Reparación de tejados en viviendas obreras, instalación de canalones con tratamiento anticorrosivo, impermeabilización de terrazas.</p><h3>Zona Centro</h3><p><strong>Centro Histórico, Sabugo, La Cámara:</strong> Restauración de tejados en edificios protegidos, reparación con pizarra original, trabajos con autorización municipal.</p><h3>Zona Sur</h3><p><strong>Villalegre, Versalles Sur, El Quirinal:</strong> Impermeabilización de cubiertas planas en comunidades, instalación de aislamiento térmico, reparación de juntas de dilatación.</p><h3>Zona Este</h3><p><strong>Llaranes, La Carriona:</strong> Reforma de tejados de teja cerámica, limpieza de canalones, instalación de pizarra en rehabilitaciones.</p><h3>Zona Oeste y Rural</h3><p><strong>Molleda, Salinas (pedanía), Piedras Blancas (pedanía):</strong> Naves agrícolas e industriales, panel sándwich, tejados de uralita (sustitución).</p></section><section class='services-section'><h2>Servicios Específicos para Avilés</h2><h3>Tratamientos Anticorrosivos Reforzados</h3><p>Por la combinación de salinidad + contaminación industrial, en Avilés aplicamos:</p><ul><li>Canalones de zinc (máxima resistencia) o aluminio con recubrimiento epoxi marino</li><li>Tornillería exclusivamente de acero inoxidable A4 (no A2)</li><li>Pinturas anticorrosivas en estructuras metálicas con imprimación epoxi + acabado poliuretano</li></ul><h3>Restauración de Edificios Históricos</h3><p>Tenemos experiencia tramitando licencias con el Ayuntamiento de Avilés para trabajos en el casco antiguo protegido. Conocemos los requisitos: memoria técnica, fotografías del estado actual, propuesta de intervención respetuosa con la estética histórica.</p><h3>Impermeabilización con Garantía Extendida</h3><p>En Avilés, por la humedad extrema, usamos sistemas de impermeabilización premium:</p><ul><li>Membranas EPDM de 1.5mm (en lugar de 1.2mm estándar)</li><li>Membranas TPO con soldadura térmica reforzada</li><li>Poliuretano proyectado con capa mínima de 3mm</li></ul><p>Y ofrecemos garantía extendida: hasta 15 años con membranas EPDM de alta gama.</p></section><section class='prices-section'><h2>Precios en Avilés</h2><p>Precios similares a otras zonas de Asturias, con ligera variación en materiales anticorrosivos:</p><ul><li><strong>Reforma completa teja cerámica:</strong> 45-60 €/m²</li><li><strong>Reforma completa teja mixta:</strong> 50-70 €/m²</li><li><strong>Reforma completa pizarra natural:</strong> 90-120 €/m²</li><li><strong>Impermeabilización EPDM reforzada:</strong> 48-65 €/m²</li><li><strong>Canalones zinc o aluminio marino:</strong> 20-30 €/ml</li><li><strong>Restauración en casco histórico:</strong> Precio a consultar (requiere estudio personalizado por normativa)</li></ul></section><section class='faq-section'><h2>Preguntas Frecuentes en Avilés</h2><h3>¿Es cierto que en Avilés los canalones se oxidan más rápido?</h3><p>Sí. La combinación de sal marina + humedad + contaminación industrial residual hace que los metales se corroan más rápido que en zonas de interior. Por eso recomendamos zinc o aluminio con tratamiento especial.</p><h3>¿Qué pasa si mi edificio está en el casco antiguo protegido?</h3><p>Necesitas licencia municipal para cualquier intervención visible. Nosotros te asesoramos y podemos gestionar la tramitación. Conocemos los requisitos del Ayuntamiento de Avilés.</p><h3>¿Trabajáis en La Luz?</h3><p>Sí, tenemos mucha experiencia en La Luz. Conocemos los accesos, las estructuras típicas de las viviendas obreras, y los problemas específicos de humedad de la zona.</p><h3>¿Ofrecéis garantía en cubiertas planas?</h3><p>Sí, hasta 15 años con membranas EPDM de alta gama. En cubiertas planas la garantía depende del sistema de impermeabilización utilizado.</p></section><section class='cta-final-extended'><h2>¿Necesitas Reparar tu Tejado en Avilés?</h2><p>El clima industrial-marítimo de Avilés es exigente con los tejados. No esperes a que un problema pequeño se convierta en una reparación costosa. <strong>Respondemos en menos de 2 horas</strong>, inspeccionamos gratis, y te damos soluciones específicas para las condiciones de Avilés.</p><p><strong>Más de 25 años trabajando en Avilés. Conocemos cada barrio, desde La Luz hasta Llaranes.</strong></p></section>
-                    
+
                     <!-- CTA Final -->
                     <section class="cta-final">
                         <h2>¿Listo Para Proteger Tu Hogar?</h2>
@@ -650,8 +665,8 @@
                         </a>
                     </section>
                 </main>
-                
-                <!-- SIDEBAR -->
+
+                <!-- SIDEBAR con formulario -->
                 <aside class="sidebar" role="complementary">
                     <!--
   FORMULARIO - CubiertasDavid.com
@@ -769,14 +784,12 @@
     </div>
 </div>
                 </aside>
+
             </div>
         </div>
     </div>
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         HUB DE SERVICIOS DE CONVERSIÓN
-         Grid interactivo con tarjetas de servicios
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- HUB DE SERVICIOS DE CONVERSIÓN -->
     <!-- ═══════════════════════════════════════════════════════════════════
      SECCIÓN HUB DE SERVICIOS DE CONVERSIÓN
      Grid interactivo con tarjetas por ciudad y tipo de servicio
@@ -1167,9 +1180,9 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 </style>
 
-    
+
     <!-- ═══════════════════════════════════════════════════════════
-         FOOTER
+         FOOTER (src/footer.html)
          ═══════════════════════════════════════════════════════ -->
     <!--
   ═══════════════════════════════════════════════════════════════════
@@ -1449,11 +1462,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 </style>
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          WHATSAPP FLOTANTE
          ═══════════════════════════════════════════════════════ -->
-    <a href="https://wa.me/34693743627?text=Hola David, necesito información sobre reparación de tejados" 
+    <a href="https://wa.me/34693743627?text=Hola%20David,%20necesito%20informaci%C3%B3n%20sobre%20reparaci%C3%B3n%20de%20tejados"
        class="whatsapp-float"
        target="_blank"
        rel="noopener noreferrer"
@@ -1463,27 +1476,13 @@ document.addEventListener('DOMContentLoaded', function() {
         </svg>
         <span class="whatsapp-text">WhatsApp</span>
     </a>
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          JAVASCRIPT
          ═══════════════════════════════════════════════════════ -->
-    
-    <!-- Script principal -->
     <script src="/js/main.js" defer></script>
-    
-    <!-- Script del formulario -->
     <script src="/js/form.js" defer></script>
-    
-    <!-- Script del carrusel -->
     <script src="/js/carousel.js" defer></script>
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+
 </body>
 </html>

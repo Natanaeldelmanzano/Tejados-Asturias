@@ -74,11 +74,16 @@ const CONFIG = {
         // ✅ DOMINIO DEFINITIVO
         domain: 'https://www.cubiertasdavid.com',
         
+        // ✅ GOOGLE ANALYTICS 4 — reemplaza con tu ID real
+        // Encuéntralo en: analytics.google.com → Admin → Flujos de datos → ID de medición
+        ga4Id: 'G-W1DZXQX2B3',
+        
         // ✅ REDES SOCIALES (cuando las tengas)
         social: {
-            facebook: '',  // Dejar vacío si no existe
-            instagram: '',
-            twitter: ''
+            facebook: 'https://www.facebook.com/profile.php?id=61585653094778',
+            instagram: 'https://www.instagram.com/cubiertasdavid/',
+            linkedin: 'https://www.linkedin.com/in/david-cubiertas-08b3b43b5/',
+            tiktok: 'https://www.tiktok.com/@cubiertas.david.oviedo'
         }
     }
 };
@@ -141,6 +146,15 @@ function replaceVariables(html, data) {
         .replace(/{{ADDRESS_LOCALITY}}/g, b.address.locality)
         .replace(/{{ADDRESS_REGION}}/g, b.address.region)
         .replace(/{{ADDRESS_POSTAL}}/g, b.address.postalCode);
+    
+    // ✅ FIX og:url — home slug='index' genera / limpia, resto genera /slug/
+    const ogUrl = (data.slug === 'index' || !data.slug)
+        ? CONFIG.BUSINESS.domain + '/'
+        : CONFIG.BUSINESS.domain + '/' + data.slug + '/';
+    result = result.replace(/{{OG_URL}}/g, ogUrl);
+    
+    // ✅ GA4 ID desde CONFIG
+    result = result.replace(/GA_MEASUREMENT_ID/g, CONFIG.BUSINESS.ga4Id);
     
     return result;
 }
@@ -241,7 +255,8 @@ function generateSchema(pageData) {
         "sameAs": [
             b.social.facebook,
             b.social.instagram,
-            b.social.twitter
+            b.social.linkedin,
+            b.social.tiktok
         ].filter(url => url) // Elimina URLs vacías
     };
     

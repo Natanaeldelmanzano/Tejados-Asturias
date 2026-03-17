@@ -24,7 +24,7 @@ const CITIES = [
 
 // City data
 const CITY_DATA = {
-    'Oviedo': { slug: 'oviedo', climate: 'clima oceánico', features: 'Centro, Naranco, Llatana' },
+    'Oviedo': { slug: 'oviedo', climate: 'clima oceánico', features: 'Centro, Naranco, Montecerrao, San Claudio' },
     'Gijón': { slug: 'gijon', climate: 'más lluvioso de Asturias', features: 'Cimadevilla, La Arena, Somió' },
     'Avilés': { slug: 'aviles', climate: 'histórico', features: 'La Luz, Versalles, Centro' },
     'Siero': { slug: 'siero', climate: 'valle interior', features: 'Lugones, Pola, La Fresneda' },

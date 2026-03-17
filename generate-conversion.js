@@ -44,7 +44,10 @@ const CONFIG = {
         phoneLink: '+34693743627',
         email: 'cubiertasdavidoviedo@gmail.com',
         whatsapp: '34693743627',
-        domain: 'https://www.cubiertasdavid.com'
+        domain: 'https://www.cubiertasdavid.com',
+        
+        // ✅ GOOGLE ANALYTICS 4
+        ga4Id: 'G-W1DZXQX2B3'
     }
 };
 
@@ -98,6 +101,13 @@ function replaceVariables(html, data) {
         .replace(/{{ADDRESS_POSTAL}}/g, '33010')
         .replace(/{{ADDRESS_LOCALITY}}/g, 'Oviedo')
         .replace(/{{ADDRESS_REGION}}/g, 'Asturias');
+    
+    // ✅ FIX og:url — genera URL limpia para cada página de conversión
+    const ogUrl = CONFIG.BUSINESS.domain + '/' + data.slug + '/';
+    result = result.replace(/{{OG_URL}}/g, ogUrl);
+    
+    // ✅ GA4 ID desde CONFIG
+    result = result.replace(/GA_MEASUREMENT_ID/g, CONFIG.BUSINESS.ga4Id);
     
     return result;
 }

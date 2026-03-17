@@ -8,17 +8,14 @@
     <!-- ═══════════════════════════════════════════════════════════
          META TAGS SEO
          ═══════════════════════════════════════════════════════ -->
-    <title>Tejados y Cubiertas en Asturias ☎️ 693 743 627 | Cubiertas David</title>
+    <title>Cubiertas David | Tejados y Cubiertas en Asturias ☎️ 693 743 627</title>
     <meta name="description" content="Especialistas en tejados y cubiertas en Asturias. Más de 25 años de experiencia. Presupuesto gratuito. Respuesta en menos de 2 horas.">
     
-    <!-- Canonical URL -->
+    <!-- Canonical URL — generado por generate.js con la URL exacta -->
     <link rel="canonical" href="https://www.cubiertasdavid.com/">
     
     <!-- Robots -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <!-- Keywords SEO -->
-    <meta name="keywords" content="tejados asturias, cubiertas oviedo, reparación tejados, impermeabilización, canalones, empresa tejados asturias">
     
     <!-- Geo Meta Tags -->
     <meta name="geo.region" content="ES-AS">
@@ -31,9 +28,10 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cubiertas David | Tejados y Cubiertas en Asturias ☎️ 693 743 627">
     <meta property="og:description" content="Especialistas en tejados y cubiertas en Asturias. Más de 25 años de experiencia. Presupuesto gratuito. Respuesta en menos de 2 horas.">
-    <meta property="og:url" content="https://www.cubiertasdavid.com/index/">
+    <!-- FIX: og:url usa https://www.cubiertasdavid.com/ generado por generate.js (evita /index/ en home) -->
+    <meta property="og:url" content="https://www.cubiertasdavid.com/">
     <meta property="og:site_name" content="Cubiertas David">
-    <meta property="og:image" content="/img/hero-cubiertas-david.jpg">
+    <meta property="og:image" content="https://www.cubiertasdavid.com/img/hero-cubiertas-david.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
@@ -42,7 +40,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cubiertas David | Tejados y Cubiertas en Asturias ☎️ 693 743 627">
     <meta name="twitter:description" content="Especialistas en tejados y cubiertas en Asturias. Más de 25 años de experiencia. Presupuesto gratuito. Respuesta en menos de 2 horas.">
-    <meta name="twitter:image" content="/img/hero-cubiertas-david.jpg">
+    <meta name="twitter:image" content="https://www.cubiertasdavid.com/img/hero-cubiertas-david.jpg">
     
     <!-- Author & Publisher -->
     <meta name="author" content="Cubiertas David">
@@ -75,7 +73,7 @@
     <meta name="theme-color" content="#1B4B8A">
     
     <!-- ═══════════════════════════════════════════════════════════
-         SCHEMA.ORG JSON-LD
+         SCHEMA.ORG JSON-LD — generado dinámicamente por generate.js
          ═══════════════════════════════════════════════════════ -->
     
         <script type="application/ld+json">
@@ -169,7 +167,12 @@
     "ratingCount": 47,
     "bestRating": 5
   },
-  "sameAs": []
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=61585653094778",
+    "https://www.instagram.com/cubiertasdavid/",
+    "https://www.linkedin.com/in/david-cubiertas-08b3b43b5/",
+    "https://www.tiktok.com/@cubiertas.david.oviedo"
+  ]
 }
         </script>
         <script type="application/ld+json">
@@ -186,11 +189,25 @@
   ]
 }
         </script>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         GOOGLE ANALYTICS 4
+         INSTRUCCIONES: Reemplaza G-W1DZXQX2B3 por tu ID real.
+         Ve a analytics.google.com → Admin → Flujos de datos → 
+         Selecciona tu flujo web → copia el ID (formato G-XXXXXXXXXX)
+         ═══════════════════════════════════════════════════════ -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1DZXQX2B3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-W1DZXQX2B3');
+    </script>
 </head>
 
 <body>
     <!-- ═══════════════════════════════════════════════════════════
-         HEADER - Navegación principal
+         HEADER — Navegación principal (src/header.html)
          ═══════════════════════════════════════════════════════ -->
     <!--
   ═══════════════════════════════════════════════════════════════════
@@ -337,7 +354,7 @@
   ═══════════════════════════════════════════════════════════════════
 -->
 
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          HERO SECTION
          ═══════════════════════════════════════════════════════ -->
@@ -345,33 +362,34 @@
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
+
                 <!-- Breadcrumb -->
                 <nav class="breadcrumb" aria-label="Ruta de navegación">
                     <span>Inicio</span>
                 </nav>
-                
-                <!-- H1 - Solo UNO por página -->
+
+                <!-- H1 — Solo UNO por página, definido en pages.json -->
                 <h1>Tu Tejado de Confianza en Asturias</h1>
-                
+
                 <!-- Subtítulo -->
                 <p class="subtitle">Más de 25 años protegiendo hogares asturianos</p>
-                
+
                 <!-- Texto del hero -->
                 <p class="hero-text">Servicio profesional sin intermediarios, con garantía por escrito. Respondemos en menos de 2 horas. 100% empresa asturiana.</p>
-                
-                <!-- CTAs -->
+
+                <!-- CTAs principales -->
                 <div class="hero-ctas">
                     <a href="tel:+34693743627" class="btn btn-primary">
                         📞 Llamar 693 743 627
                     </a>
-                    <a href="https://wa.me/34693743627?text=Hola, necesito presupuesto para mi tejado" 
-                       class="btn btn-whatsapp" 
-                       target="_blank" 
+                    <a href="https://wa.me/34693743627?text=Hola,%20necesito%20presupuesto%20para%20mi%20tejado"
+                       class="btn btn-whatsapp"
+                       target="_blank"
                        rel="noopener noreferrer">
                         💬 WhatsApp
                     </a>
                 </div>
-                
+
                 <!-- Trust Badges -->
                 <div class="trust-badges">
                     <div class="badge">
@@ -387,14 +405,12 @@
                         <span class="badge-text">Garantía 10 años</span>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         ✨ CARRUSEL DE ZONAS - NUEVA SECCIÓN ✨
-         Se incluye automáticamente después del hero
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- CARRUSEL DE ZONAS — justo debajo del hero, posición original -->
     <section class="zones-carousel-section">
     <div class="container">
         <div class="carousel-header">
@@ -415,7 +431,7 @@
                         </div>
                         <div class="slide-content">
                             <h3 class="slide-title">Tejados en Oviedo</h3>
-                            <p class="slide-description">Centro, Naranco, Montecerrao, San Claudio y todas las parroquias</p>
+                            <p class="slide-description">Centro, Naranco, Montecerrao, San Lázaro y todas las parroquias</p>
                             <a href="/tejados-oviedo.html" class="slide-btn">
                                 <span>Ver servicios en Oviedo</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -451,7 +467,7 @@
                         </div>
                         <div class="slide-content">
                             <h3 class="slide-title">Tejados en Avilés</h3>
-                            <p class="slide-description">La Luz, Versalles, Centro Histórico</p>
+                            <p class="slide-description">La Luz, Versalles, Centro Histórico y todas las parroquias</p>
                             <a href="/tejados-aviles.html" class="slide-btn">
                                 <span>Ver servicios en Avilés</span>
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -605,17 +621,16 @@
     </div>
 </section>
 
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         MAIN CONTENT + SIDEBAR
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- MAIN CONTENT + SIDEBAR -->
     <div class="page-layout">
         <div class="container">
             <div class="layout-grid">
+
                 <!-- MAIN CONTENT -->
                 <main class="main-content" id="main-content" role="main">
-                    <section class='intro'><p>En <strong>Cubiertas David</strong>, somos una empresa 100% asturiana con más de <strong>25 años de experiencia</strong> en el sector de tejados, cubiertas e impermeabilización. David supervisa personalmente cada obra, garantizando la máxima calidad en todos nuestros trabajos.</p><p>Ofrecemos <strong>presupuestos gratuitos</strong> sin compromiso y respondemos en <strong>menos de 2 horas</strong>. Todos nuestros servicios incluyen <strong>garantía por escrito</strong> de hasta 10 años en reformas integrales.</p></section><section class='servicios-destacados'><h2>Nuestros Servicios</h2><ul><li>Reforma integral de tejados</li><li>Reparación de goteras urgentes</li><li>Impermeabilización de cubiertas</li><li>Instalación de canalones</li><li>Panel sándwich para naves industriales</li><li>Tejados de pizarra y teja cerámica</li></ul></section>
-                    
+                    <section class='intro'><h2>Empresa de Tejados en Asturias con 25 Años de Experiencia</h2><p>En <strong>Cubiertas David</strong> somos una empresa <strong>100% asturiana</strong> especializada en tejados, cubiertas e impermeabilización. David supervisa personalmente cada obra, desde el primer presupuesto hasta la entrega final, garantizando la máxima calidad sin intermediarios.</p><p>Trabajamos en toda Asturias: <a href='https://www.cubiertasdavid.com/tejados-oviedo'>Oviedo</a>, <a href='https://www.cubiertasdavid.com/tejados-gijon'>Gijón</a>, <a href='https://www.cubiertasdavid.com/tejados-aviles'>Avilés</a>, <a href='https://www.cubiertasdavid.com/tejados-siero'>Siero</a>, <a href='https://www.cubiertasdavid.com/tejados-langreo'>Langreo</a>, <a href='https://www.cubiertasdavid.com/tejados-mieres'>Mieres</a>, <a href='https://www.cubiertasdavid.com/tejados-castrillon'>Castrillón</a>, <a href='https://www.cubiertasdavid.com/tejados-llanera'>Llanera</a> y <a href='https://www.cubiertasdavid.com/tejados-corvera'>Corvera</a>. Más de <strong>25 años protegiendo hogares asturianos</strong> con garantía por escrito de hasta 10 años.</p></section><section class='por-que-elegirnos'><h2>¿Por Qué Elegir Cubiertas David?</h2><div class='ventajas-grid'><div class='ventaja'><span class='ventaja-icon'>⏱</span><h3>Respuesta en 2 Horas</h3><p>Ante cualquier emergencia en tu tejado respondemos en menos de 2 horas. Sabemos que una gotera no puede esperar, especialmente con el clima de Asturias.</p></div><div class='ventaja'><span class='ventaja-icon'>📋</span><h3>Presupuesto Gratuito</h3><p>Te enviamos un <a href='https://www.cubiertasdavid.com/presupuesto-tejados-oviedo'>presupuesto detallado y gratuito</a> sin compromiso. Precio cerrado desde el primer día: sin sorpresas ni costes ocultos al finalizar la obra.</p></div><div class='ventaja'><span class='ventaja-icon'>✅</span><h3>Garantía por Escrito</h3><p>Todos nuestros trabajos incluyen garantía escrita. Las <a href='https://www.cubiertasdavid.com/reforma-tejados-oviedo'>reformas integrales de tejado</a> cuentan con hasta <strong>10 años de garantía</strong>. Trabajamos con los mejores materiales del mercado.</p></div><div class='ventaja'><span class='ventaja-icon'>👷</span><h3>David en Cada Obra</h3><p>No somos una gran empresa con subcontratas. David supervisa personalmente cada trabajo, desde la <a href='https://www.cubiertasdavid.com/reparacion-tejados-asturias'>reparación más pequeña</a> hasta la reforma integral más compleja.</p></div></div></section><section class='servicios-principales'><h2>Servicios de Tejados y Cubiertas en Asturias</h2><p>Ofrecemos una solución completa para cualquier necesidad relacionada con tu tejado, sea cual sea su tipo o estado.</p><div class='servicios-cards'><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/reforma-tejados-oviedo'>Reforma Integral de Tejados</a></h3><p>Renovación completa de tu tejado con materiales de primera calidad. Incluye retirada del material antiguo, nueva impermeabilización, colocación de teja o pizarra y canalones. Garantía 10 años.</p><a href='https://www.cubiertasdavid.com/reforma-tejados-oviedo' class='btn-servicio'>Ver servicio →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/reparacion-tejados-asturias'>Reparación de Tejados</a></h3><p>Reparamos cualquier tipo de daño: tejas rotas o desplazadas, filtraciones, zonas de riesgo. Diagnóstico rápido y reparación duradera con materiales compatibles con tu tejado actual.</p><a href='https://www.cubiertasdavid.com/reparacion-tejados-asturias' class='btn-servicio'>Ver servicio →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/urgencias-goteras-24h'>Urgencias y Goteras 24h</a></h3><p>¿Tienes una gotera ahora mismo? Llamamos y estamos en tu domicilio en menos de 2 horas. Servicio de <a href='https://www.cubiertasdavid.com/urgencias-goteras-24h'>urgencias de tejados disponible todos los días</a>, incluidos fines de semana.</p><a href='https://www.cubiertasdavid.com/urgencias-goteras-24h' class='btn-servicio'>Llamar ahora →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/impermeabilizacion-cubiertas'>Impermeabilización de Cubiertas</a></h3><p>Aplicamos sistemas de <a href='https://www.cubiertasdavid.com/impermeabilizacion-cubiertas'>impermeabilización profesional</a> para cubiertas planas, terrazas y tejados con pendiente. Solución definitiva contra la humedad y las filtraciones.</p><a href='https://www.cubiertasdavid.com/impermeabilizacion-cubiertas' class='btn-servicio'>Ver servicio →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/canalones-asturias'>Canalones en Asturias</a></h3><p>Instalación, sustitución y reparación de <a href='https://www.cubiertasdavid.com/canalones-asturias'>canalones en aluminio, PVC o zinc</a>. Una buena evacuación del agua es esencial para proteger la estructura de tu tejado en el clima asturiano.</p><a href='https://www.cubiertasdavid.com/canalones-asturias' class='btn-servicio'>Ver servicio →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/tejados-pizarra-teja'>Tejados de Pizarra y Teja</a></h3><p>Instalación y sustitución de <a href='https://www.cubiertasdavid.com/tejados-pizarra-teja'>tejados de pizarra natural y teja cerámica</a>. Materiales tradicionales asturianos que combinan durabilidad, aislamiento y estética perfecta para viviendas de la región.</p><a href='https://www.cubiertasdavid.com/tejados-pizarra-teja' class='btn-servicio'>Ver servicio →</a></div><div class='servicio-card'><h3><a href='https://www.cubiertasdavid.com/panel-sandwich-asturias'>Panel Sándwich Industrial</a></h3><p>Cubrición de naves, almacenes y edificios industriales con <a href='https://www.cubiertasdavid.com/panel-sandwich-asturias'>panel sándwich de alto rendimiento</a>. Instalación rápida, excelente aislamiento térmico y acústico, y máxima durabilidad.</p><a href='https://www.cubiertasdavid.com/panel-sandwich-asturias' class='btn-servicio'>Ver servicio →</a></div></div></section><section class='zonas-servicio'><h2>Tejados en Toda Asturias</h2><p>Cubrimos los principales concejos de Asturias con el mismo nivel de servicio y los mismos plazos de respuesta. Sea cual sea tu municipio, estamos cerca.</p><div class='zonas-grid'><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-oviedo'>Tejados en Oviedo</a></h3><p>Capital de Asturias. Atendemos el centro, los barrios residenciales y todos los concejos del área metropolitana de <a href='https://www.cubiertasdavid.com/tejados-oviedo'>Oviedo</a>.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-gijon'>Tejados en Gijón</a></h3><p>La ciudad más poblada de Asturias. Especialistas en cubiertas con exposición marina y reparaciones en el entorno de <a href='https://www.cubiertasdavid.com/tejados-gijon'>Gijón</a>.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-aviles'>Tejados en Avilés</a></h3><p>Tejados y cubiertas en <a href='https://www.cubiertasdavid.com/tejados-aviles'>Avilés</a> y su área industrial. Experiencia en cubiertas de edificios históricos del casco antiguo.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-siero'>Tejados en Siero</a></h3><p>Servicio completo en <a href='https://www.cubiertasdavid.com/tejados-siero'>Siero</a>: Lugones, Pola de Siero, La Fresneda y todas las parroquias del concejo.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-langreo'>Tejados en Langreo</a></h3><p>Reformas y reparaciones en <a href='https://www.cubiertasdavid.com/tejados-langreo'>Langreo</a>, Sama de Langreo, La Felguera y Riaño. Zona industrial y residencial.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-mieres'>Tejados en Mieres</a></h3><p>Cubrimos <a href='https://www.cubiertasdavid.com/tejados-mieres'>Mieres</a>, Figaredo, Turón y Ujo. Tejados adaptados al clima interior de montaña del concejo.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-castrillon'>Tejados en Castrillón</a></h3><p>Servicio en <a href='https://www.cubiertasdavid.com/tejados-castrillon'>Castrillón</a>: Salinas, Piedras Blancas y Arnao. Cubiertas resistentes al ambiente costero.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-llanera'>Tejados en Llanera</a></h3><p>Atendemos <a href='https://www.cubiertasdavid.com/tejados-llanera'>Llanera</a>, Posada de Llanera y Lugo de Llanera, zona residencial en crecimiento.</p></div><div class='zona-item'><h3><a href='https://www.cubiertasdavid.com/tejados-corvera'>Tejados en Corvera</a></h3><p>Reformas y reparaciones en <a href='https://www.cubiertasdavid.com/tejados-corvera'>Corvera</a>: Trasona, Nubledo y Cancienes. Zona rural y residencial del occidente asturiano.</p></div></div></section><section class='proceso-trabajo'><h2>Cómo Trabajamos</h2><ol class='proceso-steps'><li><strong>Llamada o WhatsApp</strong> — Contactas con David directamente al <a href='tel:+34693743627'>693 743 627</a>. Sin centralitas ni intermediarios.</li><li><strong>Visita y diagnóstico gratuito</strong> — Nos desplazamos a tu domicilio, inspeccionamos el tejado y te explicamos exactamente qué necesita.</li><li><strong>Presupuesto cerrado</strong> — Recibes un <a href='https://www.cubiertasdavid.com/presupuesto-tejados-oviedo'>presupuesto detallado y sin letra pequeña</a>. El precio que aceptas es el precio que pagas.</li><li><strong>Ejecución de la obra</strong> — David supervisa personalmente el trabajo. Materiales de primera calidad y limpieza total al finalizar.</li><li><strong>Garantía por escrito</strong> — Al terminar recibes la garantía firmada. Para reformas integrales, hasta <strong>10 años de cobertura</strong>.</li></ol></section><section class='cta-home'><h2>Solicita tu Presupuesto Gratuito Hoy</h2><p>¿Tienes dudas sobre el estado de tu tejado? ¿Necesitas una reparación urgente o estás pensando en una reforma? Llama ahora y David te asesora sin compromiso.</p><div class='cta-buttons'><a href='tel:+34693743627' class='btn btn-primary btn-lg'>📞 693 743 627 — Llamar Ahora</a><a href='https://wa.me/34693743627?text=Hola%20David%2C%20necesito%20presupuesto%20para%20mi%20tejado' class='btn btn-whatsapp btn-lg' target='_blank' rel='noopener noreferrer'>💬 WhatsApp</a></div><p class='cta-sub'>Respuesta garantizada en menos de 2 horas · Presupuesto gratuito · Sin compromiso</p></section>
+
                     <!-- CTA Final -->
                     <section class="cta-final">
                         <h2>¿Listo Para Proteger Tu Hogar?</h2>
@@ -625,8 +640,8 @@
                         </a>
                     </section>
                 </main>
-                
-                <!-- SIDEBAR -->
+
+                <!-- SIDEBAR con formulario -->
                 <aside class="sidebar" role="complementary">
                     <!--
   FORMULARIO - CubiertasDavid.com
@@ -744,14 +759,12 @@
     </div>
 </div>
                 </aside>
+
             </div>
         </div>
     </div>
-    
-    <!-- ═══════════════════════════════════════════════════════════
-         HUB DE SERVICIOS DE CONVERSIÓN
-         Grid interactivo con tarjetas de servicios
-         ═══════════════════════════════════════════════════════ -->
+
+    <!-- HUB DE SERVICIOS DE CONVERSIÓN -->
     <!-- ═══════════════════════════════════════════════════════════════════
      SECCIÓN HUB DE SERVICIOS DE CONVERSIÓN
      Grid interactivo con tarjetas por ciudad y tipo de servicio
@@ -1142,9 +1155,9 @@ document.addEventListener('DOMContentLoaded', function() {
 }
 </style>
 
-    
+
     <!-- ═══════════════════════════════════════════════════════════
-         FOOTER
+         FOOTER (src/footer.html)
          ═══════════════════════════════════════════════════════ -->
     <!--
   ═══════════════════════════════════════════════════════════════════
@@ -1424,11 +1437,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 }
 </style>
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          WHATSAPP FLOTANTE
          ═══════════════════════════════════════════════════════ -->
-    <a href="https://wa.me/34693743627?text=Hola David, necesito información sobre reparación de tejados" 
+    <a href="https://wa.me/34693743627?text=Hola%20David,%20necesito%20informaci%C3%B3n%20sobre%20reparaci%C3%B3n%20de%20tejados"
        class="whatsapp-float"
        target="_blank"
        rel="noopener noreferrer"
@@ -1438,27 +1451,13 @@ document.addEventListener('DOMContentLoaded', function() {
         </svg>
         <span class="whatsapp-text">WhatsApp</span>
     </a>
-    
+
     <!-- ═══════════════════════════════════════════════════════════
          JAVASCRIPT
          ═══════════════════════════════════════════════════════ -->
-    
-    <!-- Script principal -->
     <script src="/js/main.js" defer></script>
-    
-    <!-- Script del formulario -->
     <script src="/js/form.js" defer></script>
-    
-    <!-- Script del carrusel -->
     <script src="/js/carousel.js" defer></script>
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
-    </script>
+
 </body>
 </html>
