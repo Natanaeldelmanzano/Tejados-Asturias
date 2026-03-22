@@ -1,0 +1,33 @@
+# ═══════════════════════════════════════════════════════════════════
+# CLOUDFLARE PAGES - REDIRECTS 301
+# ═══════════════════════════════════════════════════════════════════
+# 
+# Este archivo debe estar en la raíz de /dist/ 
+# Se llama exactamente: _redirects (sin extensión)
+#
+# IMPORTANTE: Cloudflare Pages lee este archivo automáticamente
+# ═══════════════════════════════════════════════════════════════════
+
+# ═══════════════════════════════════════════════════════════════════
+# REDIRECT 1: HTTP → HTTPS (Forzar SSL)
+# ═══════════════════════════════════════════════════════════════════
+http://cubiertasdavid.com/* https://www.cubiertasdavid.com/:splat 301!
+http://www.cubiertasdavid.com/* https://www.cubiertasdavid.com/:splat 301!
+
+# ═══════════════════════════════════════════════════════════════════
+# REDIRECT 2: Sin WWW → Con WWW (Forzar www)
+# ═══════════════════════════════════════════════════════════════════
+https://cubiertasdavid.com/* https://www.cubiertasdavid.com/:splat 301!
+
+# ═══════════════════════════════════════════════════════════════════
+# EXPLICACIÓN:
+# ═══════════════════════════════════════════════════════════════════
+# :splat = Captura todo después del dominio (ej: /tejados-oviedo)
+# 301! = Redirect permanente (Google lo entiende como definitivo)
+#
+# RESULTADO FINAL:
+# Todas estas URLs redirigen a https://www.cubiertasdavid.com/
+# - http://cubiertasdavid.com/
+# - http://www.cubiertasdavid.com/
+# - https://cubiertasdavid.com/
+# ═══════════════════════════════════════════════════════════════════
