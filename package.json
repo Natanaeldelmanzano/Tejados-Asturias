@@ -10,7 +10,9 @@
     "serve": "python -m http.server 8000 --directory dist",
     "dev": "node generate.js && node generate-conversion.js && node insert-links.js && echo. && echo ✅ Páginas generadas. Abre http://localhost:8000 en tu navegador",
     "build": "node clean.js && npm run generate",
-    "build:prod": "npm run build && npm run generate:sitemap"
+    "build:prod": "npm run build && npm run generate:sitemap",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "keywords": [
     "static-site",
@@ -33,5 +35,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/yourusername/cubiertasdavid.git"
+  },
+  "devDependencies": {
+    "wrangler": "^4.74.0"
   }
 }
